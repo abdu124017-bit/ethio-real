@@ -1,61 +1,67 @@
-
 🏗️ ETHIO REAL
 
-የህንፃ • የቧንቧ • የኤሌክትሪክ እቃዎች አቅራቢ
+ሪል የህንፃ መሳሪያዎች
 
-እንኳን ወደ ETHIO REAL በደህና መጡ!
+ETHIO REAL የህንፃ፣ የቧንቧ፣ የኤሌክትሪክ እና የመታጠቢያ ቤት እቃዎች አቅራቢ ነው።
 
-ETHIO REAL ለነጋዴዎች እና ለጅምላ ገዢዎች የተለያዩ የህንፃ፣ የቧንቧ፣ የመታጠቢያ ቤት እና የኤሌክትሪክ እቃዎችን በተመጣጣኝ ዋጋ የሚያቀርብ የንግድ ድርጅት ነው።
+ጥራት ያላቸውን እቃዎች በተመጣጣኝ ዋጋ ለደንበኞቻችን ለማቅረብ እንሰራለን።
 
 ---
 
-🛠️ የምናቀርባቸው ምርቶች
+🛠️ የምናቀርባቸው እቃዎች
 
-- 🏗️ የህንፃ እቃዎች
-- 🚰 የቧንቧ እቃዎች
-- 🚿 የመታጠቢያ ቤት እቃዎች
-- 🔌 የኤሌክትሪክ እቃዎች
+- 🏗️ የህንፃ መሳሪያዎች
+- 🚿 የቧንቧ እቃዎች
+- ⚡ የኤሌክትሪክ እቃዎች
+- 🚽 የመታጠቢያ ቤት እቃዎች
+- 🔧 የተለያዩ የህንፃ እቃዎች
 
 ---
 
 ⭐ ለምን ETHIO REAL?
 
+✅ ጥራት ያላቸው እቃዎች
 ✅ ተመጣጣኝ ዋጋ
-✅ የታመነ አቅርቦት
-✅ የጅምላ ሽያጭ
-✅ ፈጣን አገልግሎት
-✅ Delivery አገልግሎት
+✅ ለነጋዴዎች የWholesale አቅርቦት
+✅ ታማኝ አገልግሎት
+✅ ፈጣን እና ምቹ አገልግሎት
 
 ---
 
-📱 ያግኙን
+📍 አድራሻ
 
-📞 ስልክ: +251 976 213 646
+📍 መርካቶ – ሶሳ
+🇪🇹 አዲስ አበባ፣ ኢትዮጵያ
 
-💬 WhatsApp:
-https://wa.me/251976213646
+---
 
-📘 Facebook:
-https://www.facebook.com/profile.php?id=61592991010649
+📞 ያግኙን
+
+📱 ስልክ: +251 976 213 646
+
+💬 Telegram: "@real_business76" (https://t.me/real_business76)
+
+📘 Facebook: "ETHIO REAL Facebook" (https://www.facebook.com/profile.php?id=61592991010649)
 
 🌐 Website:
 https://abdu124017-bit.github.io/ethio-real/
 
 ---
 
-🚀 About ETHIO REAL
+🚀 Our Website
 
-ETHIO REAL is a wholesale supplier of:
+ድረገጻችንን ለመጎብኘት:
 
-- Building Materials
-- Plumbing Materials
-- Bathroom Accessories
-- Electrical Materials
-
-We are committed to providing reliable products at competitive prices.
+👉 https://abdu124017-bit.github.io/ethio-real/
 
 ---
 
-© 2026 ETHIO REAL
+🏢 ETHIO REAL
 
-የጅምላ እቃ አቅራቢ
+ጥራት • እምነት • ተመጣጣኝ ዋጋ
+
+ETHIO REAL – ለህንፃዎ የሚያስፈልጉ እቃዎች በአንድ ቦታ!
+
+---
+
+© 2026 ETHIO REAL. All Rights Reserved.
