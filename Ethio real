@@ -4,592 +4,934 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ETHIO REAL | ሪል የህንፃ መሳሪያዎች</title>
+  <title>ETHIO REAL | የህንፃ መሳሪያዎች</title>
 
-  <meta name="description" content="ETHIO REAL - የህንፃ መሳሪያዎች፣ የቧንቧ እቃዎች፣ የመታጠቢያ ቤት እቃዎች እና የኤሌክትሪክ እቃዎች በጥራትና በተመጣጣኝ ዋጋ።">
+  <meta name="description"
+    content="ETHIO REAL - የህንፃ መሳሪያዎች፣ PPR ቧንቧዎች፣ Paint፣ Hardware እና Wholesale እቃዎች አቅራቢ">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
+    html{
+      scroll-behavior:smooth;
     }
 
-    body {
-      background: #f5f7f6;
-      color: #222;
-      line-height: 1.7;
+    body{
+      font-family:Arial, sans-serif;
+      background:#f5f7f6;
+      color:#222;
+      line-height:1.6;
     }
 
     /* HEADER */
-    header {
-      background: linear-gradient(135deg, #0b6e4f, #0f9d58);
-      color: white;
-      padding: 15px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+
+    header{
+      background:#0b4d3b;
+      color:white;
+      padding:15px 7%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,.2);
     }
 
-    .logo {
-      font-size: 26px;
-      font-weight: bold;
-      letter-spacing: 1px;
+    .logo{
+      font-size:25px;
+      font-weight:bold;
+      color:#ffd700;
     }
 
-    .logo span {
-      color: #ffd700;
+    .logo span{
+      color:white;
     }
 
-    nav {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
+    nav{
+      display:flex;
+      gap:22px;
     }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:.3s;
     }
 
-    nav a:hover {
-      color: #ffd700;
+    nav a:hover{
+      color:#ffd700;
     }
 
     /* HERO */
-    .hero {
-      min-height: 550px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 60px 20px;
+
+    .hero{
+      min-height:600px;
       background:
-        linear-gradient(rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)),
-        url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80");
-      background-size: cover;
-      background-position: center;
-      color: white;
+      linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+      url("images/warehouse1.jpg");
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      padding:30px;
     }
 
-    .hero-content {
-      max-width: 850px;
+    .hero-content{
+      max-width:800px;
     }
 
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 15px;
+    .hero h1{
+      font-size:52px;
+      color:#ffd700;
+      margin-bottom:20px;
     }
 
-    .hero h1 span {
-      color: #ffd700;
+    .hero h2{
+      font-size:28px;
+      margin-bottom:20px;
     }
 
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 25px;
+    .hero p{
+      font-size:18px;
+      margin-bottom:30px;
     }
 
-    .btn {
-      display: inline-block;
-      padding: 13px 25px;
-      margin: 8px;
-      background: #ffd700;
-      color: #222;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      transition: 0.3s;
+    .btn{
+      display:inline-block;
+      padding:14px 28px;
+      background:#ffd700;
+      color:#111;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:30px;
+      margin:8px;
+      transition:.3s;
     }
 
-    .btn:hover {
-      transform: translateY(-3px);
-      background: white;
+    .btn:hover{
+      transform:translateY(-3px);
+      background:white;
     }
 
-    .btn-green {
-      background: #25d366;
-      color: white;
+    .btn-green{
+      background:#25D366;
+      color:white;
     }
 
     /* SECTION */
-    section {
-      padding: 70px 7%;
+
+    section{
+      padding:70px 7%;
     }
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 40px;
+    .section-title{
+      text-align:center;
+      margin-bottom:45px;
     }
 
-    .section-title h2 {
-      font-size: 32px;
-      color: #0b6e4f;
-      margin-bottom: 10px;
+    .section-title h2{
+      font-size:34px;
+      color:#0b4d3b;
+    }
+
+    .section-title p{
+      color:#666;
+      margin-top:10px;
     }
 
     /* ABOUT */
-    .about {
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-      font-size: 18px;
+
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
     }
 
-    /* SERVICES */
-    .services {
-      background: white;
+    .about img{
+      width:100%;
+      border-radius:15px;
+      box-shadow:0 10px 25px rgba(0,0,0,.15);
     }
 
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
+    .about-text h2{
+      color:#0b4d3b;
+      margin-bottom:20px;
+      font-size:32px;
     }
 
-    .card {
-      background: #f8f8f8;
-      padding: 30px 20px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-      transition: 0.3s;
+    .about-text p{
+      margin-bottom:15px;
+      color:#444;
     }
 
-    .card:hover {
-      transform: translateY(-8px);
+    /* FEATURES */
+
+    .features{
+      background:#0b4d3b;
+      color:white;
     }
 
-    .card .icon {
-      font-size: 45px;
-      margin-bottom: 15px;
+    .features .section-title h2{
+      color:#ffd700;
     }
 
-    .card h3 {
-      color: #0b6e4f;
-      margin-bottom: 10px;
+    .feature-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:25px;
     }
 
-    /* WHY US */
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
+    .feature{
+      background:white;
+      color:#222;
+      padding:30px;
+      text-align:center;
+      border-radius:15px;
     }
 
-    .why-item {
-      background: white;
-      padding: 25px;
-      border-left: 5px solid #ffd700;
-      border-radius: 8px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    .feature h3{
+      color:#0b4d3b;
+      margin:10px 0;
     }
 
-    .why-item h3 {
-      color: #0b6e4f;
-      margin-bottom: 8px;
+    .feature .icon{
+      font-size:45px;
+    }
+
+    /* PRODUCTS */
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:25px;
+    }
+
+    .product{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 5px 20px rgba(0,0,0,.1);
+      transition:.3s;
+    }
+
+    .product:hover{
+      transform:translateY(-8px);
+    }
+
+    .product img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .product-content{
+      padding:20px;
+    }
+
+    .product h3{
+      color:#0b4d3b;
+      margin-bottom:10px;
+    }
+
+    /* GALLERY */
+
+    .gallery{
+      background:#eee;
+    }
+
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+      gap:15px;
+    }
+
+    .gallery-grid img{
+      width:100%;
+      height:280px;
+      object-fit:cover;
+      border-radius:10px;
+      transition:.3s;
+    }
+
+    .gallery-grid img:hover{
+      transform:scale(1.03);
+    }
+
+    /* WHOLESALE */
+
+    .wholesale{
+      background:
+      linear-gradient(rgba(11,77,59,.92),rgba(11,77,59,.92)),
+      url("images/stock.jpg");
+      background-size:cover;
+      background-position:center;
+      color:white;
+      text-align:center;
+    }
+
+    .wholesale h2{
+      color:#ffd700;
+      font-size:38px;
+      margin-bottom:20px;
+    }
+
+    .wholesale p{
+      max-width:700px;
+      margin:auto;
+      font-size:18px;
     }
 
     /* CONTACT */
-    .contact {
-      background: #0b6e4f;
-      color: white;
-      text-align: center;
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
     }
 
-    .contact h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
+    .contact-card{
+      background:white;
+      padding:30px;
+      text-align:center;
+      border-radius:15px;
+      box-shadow:0 5px 20px rgba(0,0,0,.1);
     }
 
-    .contact-info {
-      max-width: 700px;
-      margin: auto;
+    .contact-card h3{
+      color:#0b4d3b;
+      margin:10px;
     }
 
-    .contact-info p {
-      font-size: 18px;
-      margin: 12px 0;
-    }
-
-    .contact a {
-      color: #ffd700;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .social-buttons {
-      margin-top: 25px;
-    }
-
-    .social {
-      display: inline-block;
-      padding: 12px 20px;
-      margin: 6px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      color: white;
-      transition: 0.3s;
-    }
-
-    .phone {
-      background: #1976d2;
-    }
-
-    .whatsapp {
-      background: #25d366;
-    }
-
-    .telegram {
-      background: #229ed9;
-    }
-
-    .tiktok {
-      background: #111;
-    }
-
-    .facebook {
-      background: #1877f2;
-    }
-
-    .social:hover {
-      transform: translateY(-3px);
-      opacity: 0.9;
+    .contact-card a{
+      color:#222;
+      text-decoration:none;
+      font-weight:bold;
+      word-break:break-word;
     }
 
     /* FOOTER */
-    footer {
-      background: #062e22;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
+
+    footer{
+      background:#092f25;
+      color:white;
+      text-align:center;
+      padding:30px;
     }
 
-    footer p {
-      margin: 5px;
+    footer span{
+      color:#ffd700;
     }
 
-    /* FLOATING WHATSAPP */
-    .floating-whatsapp {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      width: 60px;
-      height: 60px;
-      background: #25d366;
-      color: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      text-decoration: none;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-      z-index: 999;
+    /* FLOATING */
+
+    .whatsapp{
+      position:fixed;
+      bottom:25px;
+      right:20px;
+      background:#25D366;
+      color:white;
+      width:60px;
+      height:60px;
+      border-radius:50%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size:30px;
+      text-decoration:none;
+      box-shadow:0 5px 15px rgba(0,0,0,.3);
+      z-index:999;
+    }
+
+    .phone{
+      position:fixed;
+      bottom:95px;
+      right:20px;
+      background:#0b4d3b;
+      color:white;
+      width:60px;
+      height:60px;
+      border-radius:50%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size:28px;
+      text-decoration:none;
+      box-shadow:0 5px 15px rgba(0,0,0,.3);
+      z-index:999;
     }
 
     /* MOBILE */
-    @media (max-width: 768px) {
 
-      header {
-        justify-content: center;
-        gap: 10px;
-        padding: 12px;
+    @media(max-width:768px){
+
+      header{
+        flex-direction:column;
+        gap:12px;
       }
 
-      .logo {
-        font-size: 23px;
+      nav{
+        gap:12px;
+        flex-wrap:wrap;
+        justify-content:center;
       }
 
-      nav {
-        justify-content: center;
-        gap: 12px;
-        font-size: 14px;
+      .hero h1{
+        font-size:36px;
       }
 
-      .hero {
-        min-height: 500px;
+      .hero h2{
+        font-size:22px;
       }
 
-      .hero h1 {
-        font-size: 34px;
+      .about{
+        grid-template-columns:1fr;
       }
 
-      .hero p {
-        font-size: 17px;
+      section{
+        padding:50px 5%;
       }
 
-      section {
-        padding: 50px 5%;
-      }
-
-      .section-title h2 {
-        font-size: 27px;
-      }
     }
+
   </style>
 </head>
 
+
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="logo">
-      ETHIO <span>REAL</span>
-    </div>
 
-    <nav>
-      <a href="#home">መነሻ</a>
-      <a href="#about">ስለ እኛ</a>
-      <a href="#services">እቃዎቻችን</a>
-      <a href="#why">ለምን እኛ?</a>
-      <a href="#contact">ያግኙን</a>
-    </nav>
-  </header>
+<!-- HEADER -->
 
+<header>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>እንኳን ወደ <span>ETHIO REAL</span> በደህና መጡ!</h1>
+  <div class="logo">
+    ETHIO <span>REAL</span>
+  </div>
 
-      <p>
-        የህንፃ መሳሪያዎች፣ የቧንቧ እቃዎች፣
-        የመታጠቢያ ቤት እቃዎች እና
-        የኤሌክትሪክ እቃዎች በጥራትና በተመጣጣኝ ዋጋ።
-      </p>
+  <nav>
+    <a href="#home">መነሻ</a>
+    <a href="#about">ስለ እኛ</a>
+    <a href="#products">ምርቶች</a>
+    <a href="#gallery">ፎቶዎች</a>
+    <a href="#contact">ያግኙን</a>
+  </nav>
 
-      <a href="#contact" class="btn">አሁን ያግኙን</a>
-
-      <a
-        href="https://wa.me/251976213646"
-        target="_blank"
-        class="btn btn-green">
-        WhatsApp
-      </a>
-    </div>
-  </section>
+</header>
 
 
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="section-title">
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <h1>ETHIO REAL</h1>
+
+    <h2>
+      የህንፃ መሳሪያዎች እና Wholesale እቃዎች
+    </h2>
+
+    <p>
+      ጥራት ያላቸው የህንፃ መሳሪያዎች፣
+      PPR ቧንቧዎች፣ Paint፣ Hardware
+      እና ሌሎች የግንባታ እቃዎች።
+    </p>
+
+    <a class="btn"
+       href="#products">
+       ምርቶቻችንን ይመልከቱ
+    </a>
+
+    <a class="btn btn-green"
+       href="https://wa.me/251976213646">
+       WhatsApp Order
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+  <div class="about">
+
+    <img src="images/warehouse2.jpg"
+         alt="ETHIO REAL Warehouse">
+
+    <div class="about-text">
+
       <h2>ስለ ETHIO REAL</h2>
-      <p>ጥራት • እምነት • ተመጣጣኝ ዋጋ</p>
-    </div>
-
-    <div class="about">
-      <p>
-        ETHIO REAL ለህንፃ እና ለቤት ግንባታ
-        የሚያስፈልጉ የተለያዩ እቃዎችን
-        በጥራት እና በተመጣጣኝ ዋጋ የሚያቀርብ አቅራቢ ነው።
-      </p>
-
-      <br>
 
       <p>
-        ዓላማችን ለደንበኞቻችን ታማኝ፣
-        ፈጣን እና ጥራት ያለው አገልግሎት
-        መስጠት ነው።
-      </p>
-    </div>
-  </section>
-
-
-  <!-- SERVICES -->
-  <section class="services" id="services">
-
-    <div class="section-title">
-      <h2>የምናቀርባቸው እቃዎች</h2>
-      <p>ለህንፃዎ የሚያስፈልጉ የተለያዩ እቃዎች</p>
-    </div>
-
-    <div class="service-grid">
-
-      <div class="card">
-        <div class="icon">🏗️</div>
-        <h3>የህንፃ መሳሪያዎች</h3>
-        <p>
-          ለቤት እና ለህንፃ ግንባታ
-          የሚያስፈልጉ የተለያዩ መሳሪያዎች።
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🚿</div>
-        <h3>የቧንቧ እቃዎች</h3>
-        <p>
-          የውሃ ቧንቧዎች፣ fittings እና
-          ሌሎች የፕላምቢንግ እቃዎች።
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🛁</div>
-        <h3>የመታጠቢያ ቤት እቃዎች</h3>
-        <p>
-          ዘመናዊ እና ጥራት ያላቸው
-          የባኞ እቃዎች።
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">⚡</div>
-        <h3>የኤሌክትሪክ እቃዎች</h3>
-        <p>
-          ለቤትና ለህንፃ የሚያስፈልጉ
-          የተለያዩ የኤሌክትሪክ እቃዎች።
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- WHY US -->
-  <section id="why">
-
-    <div class="section-title">
-      <h2>ለምን ETHIO REAL?</h2>
-      <p>የእርስዎ ታማኝ የእቃ አቅራቢ</p>
-    </div>
-
-    <div class="why-grid">
-
-      <div class="why-item">
-        <h3>✅ ጥራት</h3>
-        <p>ጥራት ያላቸው እና የተመረጡ እቃዎች።</p>
-      </div>
-
-      <div class="why-item">
-        <h3>💰 ተመጣጣኝ ዋጋ</h3>
-        <p>ለደንበኞቻችን ፍትሃዊ እና ተመጣጣኝ ዋጋ።</p>
-      </div>
-
-      <div class="why-item">
-        <h3>🤝 ታማኝነት</h3>
-        <p>በእምነት እና በጥሩ ግንኙነት እንሰራለን።</p>
-      </div>
-
-      <div class="why-item">
-        <h3>🚚 ፈጣን አገልግሎት</h3>
-        <p>ፈጣን ምላሽ እና ምቹ አገልግሎት።</p>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-
-    <h2>📞 ያግኙን</h2>
-
-    <div class="contact-info">
-
-      <p>
-        📱 Phone:
-        <a href="tel:+251976213646">
-          +251 976 213 646
-        </a>
+        ETHIO REAL በጥራት ያላቸው
+        የህንፃ መሳሪያዎች እና
+        የWholesale እቃዎች አቅርቦት
+        ላይ የሚሰራ ድርጅት ነው።
       </p>
 
       <p>
-        💬 WhatsApp:
-        <a
-          href="https://wa.me/251976213646"
-          target="_blank">
-          +251 976 213 646
-        </a>
+        ለነጋዴዎች፣ ለህንፃ ባለሙያዎች
+        እና ለተለያዩ የግንባታ ፕሮጀክቶች
+        ተመጣጣኝ ዋጋ እና
+        ጥራት ያላቸው እቃዎችን
+        እናቀርባለን።
       </p>
 
-      <p>
-        📍 አድራሻ: መርካቶ ሶሳ
-      </p>
-
-      <div class="social-buttons">
-
-        <a
-          href="tel:+251976213646"
-          class="social phone">
-          📞 Phone
-        </a>
-
-        <a
-          href="https://wa.me/251976213646"
-          target="_blank"
-          class="social whatsapp">
-          💬 WhatsApp
-        </a>
-
-        <a
-          href="https://t.me/real_business76"
-          target="_blank"
-          class="social telegram">
-          ✈ Telegram
-        </a>
-
-        <a
-          href="https://www.tiktok.com/@userbreal1234"
-          target="_blank"
-          class="social tiktok">
-          🎵 TikTok
-        </a>
-
-        <a
-          href="https://www.facebook.com/profile.php?id=61592991010649"
-          target="_blank"
-          class="social facebook">
-          👍 Facebook
-        </a>
-
-      </div>
+      <a class="btn"
+         href="tel:+251976213646">
+         📞 አሁን ይደውሉ
+      </a>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
 
-  <!-- FOOTER -->
-  <footer>
+
+<!-- FEATURES -->
+
+<section class="features">
+
+  <div class="section-title">
+
+    <h2>ለምን ETHIO REAL?</h2>
+
+  </div>
+
+  <div class="feature-grid">
+
+    <div class="feature">
+
+      <div class="icon">🏆</div>
+
+      <h3>ጥራት</h3>
+
+      <p>
+        ጥራት ያላቸው እቃዎች
+      </p>
+
+    </div>
+
+
+    <div class="feature">
+
+      <div class="icon">💰</div>
+
+      <h3>ተመጣጣኝ ዋጋ</h3>
+
+      <p>
+        ለWholesale እና Retail
+      </p>
+
+    </div>
+
+
+    <div class="feature">
+
+      <div class="icon">📦</div>
+
+      <h3>ብዙ ክምችት</h3>
+
+      <p>
+        የተለያዩ እቃዎች
+      </p>
+
+    </div>
+
+
+    <div class="feature">
+
+      <div class="icon">🤝</div>
+
+      <h3>እምነት</h3>
+
+      <p>
+        የደንበኛ እርካታ
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+  <div class="section-title">
+
+    <h2>ዋና ምርቶቻችን</h2>
 
     <p>
-      <strong>ETHIO REAL</strong>
+      የተለያዩ የህንፃ እና Hardware እቃዎች
     </p>
 
-    <p>
-      የጥራት የህንፃ እና የቤት እቃዎች አቅራቢ
-    </p>
-
-    <p>
-      © 2026 ETHIO REAL. All Rights Reserved.
-    </p>
-
-  </footer>
+  </div>
 
 
-  <!-- FLOATING WHATSAPP -->
-  <a
-    href="https://wa.me/251976213646"
-    target="_blank"
-    class="floating-whatsapp"
-    title="WhatsApp">
-    💬
+  <div class="products">
+
+
+    <div class="product">
+
+      <img src="images/paint.jpg"
+           alt="Paint">
+
+      <div class="product-content">
+
+        <h3>🎨 Paint & Spray Paint</h3>
+
+        <p>
+          የተለያዩ Paint እና
+          Spray Paint ምርቶች
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="product">
+
+      <img src="images/ppr1.jpg"
+           alt="PPR Pipes">
+
+      <div class="product-content">
+
+        <h3>🚰 PPR Pipes & Fittings</h3>
+
+        <p>
+          PPR ቧንቧዎች፣
+          Fittings እና Accessories
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="product">
+
+      <img src="images/ppr2.jpg"
+           alt="PPR Fittings">
+
+      <div class="product-content">
+
+        <h3>🔧 Plumbing Materials</h3>
+
+        <p>
+          የውሃ እና Plumbing
+          መሳሪያዎች
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="product">
+
+      <img src="images/hardware1.jpg"
+           alt="Hardware">
+
+      <div class="product-content">
+
+        <h3>✨ Hardware</h3>
+
+        <p>
+          የቤት ማስዋቢያ
+          እና Hardware እቃዎች
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="product">
+
+      <img src="images/hardware2.jpg"
+           alt="Building Hardware">
+
+      <div class="product-content">
+
+        <h3>🏠 Building Hardware</h3>
+
+        <p>
+          ለቤት እና ለህንፃ
+          የሚያስፈልጉ እቃዎች
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="product">
+
+      <img src="images/warehouse3.jpg"
+           alt="Wholesale">
+
+      <div class="product-content">
+
+        <h3>📦 Wholesale Supply</h3>
+
+        <p>
+          ለነጋዴዎች በብዛት
+          የሚቀርቡ እቃዎች
+        </p>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- WHOLESALE -->
+
+<section class="wholesale">
+
+  <h2>📦 WHOLESALE SUPPLY</h2>
+
+  <p>
+
+    ETHIO REAL ለነጋዴዎች
+    እና ለተለያዩ የንግድ
+    ተቋማት በብዛት
+    የህንፃ መሳሪያዎችን
+    በተመጣጣኝ ዋጋ
+    ያቀርባል።
+
+  </p>
+
+  <br>
+
+  <a class="btn"
+     href="https://wa.me/251976213646">
+
+     Wholesale Inquiry
+
   </a>
+
+</section>
+
+
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+  <div class="section-title">
+
+    <h2>የምርቶቻችን ፎቶዎች</h2>
+
+  </div>
+
+
+  <div class="gallery-grid">
+
+    <img src="images/warehouse1.jpg"
+         alt="Warehouse">
+
+    <img src="images/warehouse2.jpg"
+         alt="Products">
+
+    <img src="images/warehouse3.jpg"
+         alt="Wholesale Products">
+
+    <img src="images/paint.jpg"
+         alt="Paint Products">
+
+    <img src="images/ppr1.jpg"
+         alt="PPR Pipes">
+
+    <img src="images/ppr2.jpg"
+         alt="PPR Fittings">
+
+    <img src="images/hardware1.jpg"
+         alt="Hardware">
+
+    <img src="images/hardware2.jpg"
+         alt="Hardware Products">
+
+    <img src="images/stock.jpg"
+         alt="ETHIO REAL Stock">
+
+  </div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+  <div class="section-title">
+
+    <h2>ያግኙን</h2>
+
+    <p>
+      ለትዕዛዝ ወይም ለመረጃ
+      በቀጥታ ያግኙን
+    </p>
+
+  </div>
+
+
+  <div class="contact-grid">
+
+
+    <div class="contact-card">
+
+      <h3>📞 Phone</h3>
+
+      <a href="tel:+251976213646">
+
+        +251 976 213 646
+
+      </a>
+
+    </div>
+
+
+
+    <div class="contact-card">
+
+      <h3>💬 WhatsApp</h3>
+
+      <a href="https://wa.me/251976213646">
+
+        WhatsApp Order
+
+      </a>
+
+    </div>
+
+
+
+    <div class="contact-card">
+
+      <h3>✈️ Telegram</h3>
+
+      <a href="https://t.me/real_business76">
+
+        @real_business76
+
+      </a>
+
+    </div>
+
+
+
+    <div class="contact-card">
+
+      <h3>🎵 TikTok</h3>
+
+      <a href="https://www.tiktok.com/@userbreal1234">
+
+        @userbreal1234
+
+      </a>
+
+    </div>
+
+
+
+    <div class="contact-card">
+
+      <h3>📍 Address</h3>
+
+      <p>
+        መርካቶ - ሶሳ<br>
+        Addis Ababa, Ethiopia
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <h2>ETHIO <span>REAL</span></h2>
+
+  <br>
+
+  <p>
+    የህንፃ መሳሪያዎች |
+    Plumbing |
+    Paint |
+    Hardware |
+    Wholesale
+  </p>
+
+  <br>
+
+  <p>
+    © 2026 ETHIO REAL
+    | All Rights Reserved
+  </p>
+
+</footer>
+
+
+
+<!-- FLOATING BUTTONS -->
+
+<a class="whatsapp"
+   href="https://wa.me/251976213646"
+   target="_blank">
+
+   💬
+
+</a>
+
+
+<a class="phone"
+   href="tel:+251976213646">
+
+   📞
+
+</a>
+
 
 </body>
 </html>
