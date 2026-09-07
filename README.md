@@ -281,9 +281,4 @@
   </section>  <!-- FOOTER -->  <footer>
     <p>
       © 2026 ETHIO REAL | All Rights Reserved
-    </p><p>
-  ጥራት • እምነት • ተመጣጣኝ ዋጋ
-</p>
-
-  </footer></body>
-</html>
+    </
