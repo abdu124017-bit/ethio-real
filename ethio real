@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ETHIO REAL | Building Materials & Supplies</title>
+
+  <meta name="description"
+        content="ETHIO REAL - Building materials, plumbing and electrical supplies in Ethiopia. Quality products, fair prices and reliable service.">
+
+  <meta name="keywords"
+        content="ETHIO REAL, building materials Ethiopia, plumbing supplies, electrical materials, Addis Ababa, Merkato">
+
+  <meta name="author" content="ETHIO REAL">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background: #f5f7fa;
+      color: #222;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* NAVBAR */
+    header {
+      background: #063b5c;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 15px rgba(0,0,0,.15);
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #f5c542;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      color: #f5c542;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      background:
+        linear-gradient(rgba(3,35,55,.75), rgba(3,35,55,.75)),
+        url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #f5c542;
+    }
+
+    .hero p {
+      font-size: 21px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: .3s;
+    }
+
+    .btn-primary {
+      background: #f5c542;
+      color: #111;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      border: 2px solid white;
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: #063b5c;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 70px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 35px;
+      color: #063b5c;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #666;
+    }
+
+    /* SERVICES */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+    }
+
+    .icon {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #063b5c;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #666;
+    }
+
+    /* ABOUT */
+    .about {
+      background: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about h2 {
+      color: #063b5c;
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .about-box {
+      background: #063b5c;
+      color: white;
+      padding: 40px;
+      border-radius: 15px;
+    }
+
+    .about-box h3 {
+      color: #f5c542;
+      margin-bottom: 15px;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: #eef3f6;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .contact-item {
+      background: white;
+      padding: 25px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.06);
+    }
+
+    .contact-item h3 {
+      margin: 10px 0;
+      color: #063b5c;
+    }
+
+    .contact-item a {
+      color: #333;
+      font-weight: bold;
+      word-break: break-word;
+    }
+
+    /* CTA */
+    .cta {
+      background: #063b5c;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      margin-bottom: 25px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #021f30;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer p {
+      margin: 5px 0;
+      color: #ddd;
+    }
+
+    .social {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .social a {
+      padding: 10px 15px;
+      border-radius: 7px;
+      background: white;
+      color: #063b5c;
+      font-weight: bold;
+    }
+
+    /* MOBILE */
+    @media (max-width: 800px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .cards,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title h2,
+      .about h2,
+      .cta h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">ETHIO <span>REAL</span></div>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+
+    <h1>Welcome to <span>ETHIO REAL</span></h1>
+
+    <p>
+      Building Materials • Plumbing • Electrical Supplies
+      <br>
+      Quality Products • Fair Prices • Reliable Service
+    </p>
+
+    <div class="buttons">
+      <a class="btn btn-primary" href="tel:+251976213646">
+        📞 Call Now
+      </a>
+
+      <a class="btn btn-outline"
+         href="https://wa.me/251976213646"
+         target="_blank">
+        💬 WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Our Products & Services</h2>
+      <p>Reliable supplies for construction and your business needs.</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🏗️</div>
+        <h3>Building Materials</h3>
+        <p>
+          Quality building materials and construction supplies
+          for different projects.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚰</div>
+        <h3>Plumbing Supplies</h3>
+        <p>
+          Pipes, fittings, bathroom products and plumbing
+          accessories.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💡</div>
+        <h3>Electrical Materials</h3>
+        <p>
+          Electrical products and accessories for residential
+          and commercial projects.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+
+    <div class="about-grid">
+
+      <div>
+        <h2>About ETHIO REAL</h2>
+
+        <p>
+          ETHIO REAL is a trusted supplier of building materials,
+          plumbing products and electrical supplies.
+        </p>
+
+        <p>
+          We focus on quality products, fair prices and reliable
+          customer service.
+        </p>
+
+        <p>
+          We are committed to serving customers and businesses
+          with dependable products and convenient service.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>Why Choose ETHIO REAL?</h3>
+
+        <p>✓ Quality Products</p>
+        <p>✓ Fair & Competitive Prices</p>
+        <p>✓ Reliable Customer Service</p>
+        <p>✓ Wholesale Supply</p>
+        <p>✓ Delivery Available</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Contact ETHIO REAL</h2>
+      <p>Get in touch with us today.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-item">
+        <div class="icon">📞</div>
+        <h3>Phone</h3>
+        <a href="tel:+251976213646">
+          +251 976 213 646
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <div class="icon">💬</div>
+        <h3>WhatsApp</h3>
+        <a href="https://wa.me/251976213646" target="_blank">
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <div class="icon">✈️</div>
+        <h3>Telegram</h3>
+        <a href="https://t.me/real_business76" target="_blank">
+          @real_business76
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <div class="icon">📍</div>
+        <h3>Location</h3>
+        <a href="https://www.google.com/maps/search/?api=1&query=Merkato+Addis+Ababa"
+           target="_blank">
+          Merkato, Addis Ababa
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SOCIAL -->
+<section>
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Follow ETHIO REAL</h2>
+      <p>Connect with us on social media.</p>
+    </div>
+
+    <div class="social">
+
+      <a href="https://www.facebook.com/profile.php?id=61592991010649"
+         target="_blank">
+        Facebook
+      </a>
+
+      <a href="https://www.tiktok.com/@real_business76"
+         target="_blank">
+        TikTok
+      </a>
+
+      <a href="https://t.me/real_business76"
+         target="_blank">
+        Telegram
+      </a>
+
+      <a href="https://wa.me/251976213646"
+         target="_blank">
+        WhatsApp
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+
+  <div class="container">
+
+    <h2>Ready to Order?</h2>
+
+    <p>
+      Contact ETHIO REAL today for products, prices and delivery.
+    </p>
+
+    <a class="btn btn-primary"
+       href="https://wa.me/251976213646"
+       target="_blank">
+      💬 Order on WhatsApp
+    </a>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="social">
+
+    <a href="https://wa.me/251976213646" target="_blank">
+      WhatsApp
+    </a>
+
+    <a href="https://t.me/real_business76" target="_blank">
+      Telegram
+    </a>
+
+    <a href="https://www.tiktok.com/@real_business76" target="_blank">
+      TikTok
+    </a>
+
+    <a href="https://www.facebook.com/profile.php?id=61592991010649"
+       target="_blank">
+      Facebook
+    </a>
+
+  </div>
+
+  <p>© 2026 ETHIO REAL. All Rights Reserved.</p>
+  <p>Building Materials • Plumbing • Electrical Supplies</p>
+
+</footer>
+
+</body>
+</html>
