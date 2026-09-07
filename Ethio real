@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETHIO REAL | የህንፃ መሳሪያዎች</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #087f5b, #0b7285);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 16px;
+    }
+
+    nav {
+      background: #ffffff;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #087f5b;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+
+    .hero {
+      padding: 55px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #e3fafc, #d3f9d8);
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+      color: #075985;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 17px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 13px 25px;
+      background: #087f5b;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 45px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #075985;
+      font-size: 27px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card .icon {
+      font-size: 45px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #087f5b;
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      background: white;
+      border-radius: 15px;
+      text-align: center;
+      padding: 35px 20px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      background: #087f5b;
+    }
+
+    footer {
+      background: #073b4c;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 26px;
+      }
+
+      .hero h2 {
+        font-size: 24px;
+      }
+
+      nav a {
+        margin: 0 5px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>ETHIO REAL</h1>
+    <p>የህንፃ መሳሪያዎች • የቧንቧ እቃዎች • የኤሌክትሪክ እቃዎች</p>
+  </header>
+
+  <nav>
+    <a href="#home">መነሻ</a>
+    <a href="#products">ምርቶች</a>
+    <a href="#about">ስለ እኛ</a>
+    <a href="#contact">አግኙን</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>እንኳን ወደ ETHIO REAL በደህና መጡ!</h2>
+
+    <p>
+      ለነጋዴዎች እና ለጅምላ ገዢዎች
+      የህንፃ መሳሪያዎች፣ የቧንቧ እና
+      የኤሌክትሪክ እቃዎችን በተመጣጣኝ ዋጋ እናቀርባለን።
+    </p>
+
+    <a class="btn" href="#contact">አሁን ያግኙን</a>
+  </section>
+
+  <section id="products">
+    <h2>የምናቀርባቸው ምርቶች</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <div class="icon">🧱</div>
+        <h3>የህንፃ መሳሪያዎች</h3>
+        <p>የተለያዩ የግንባታ እና የህንፃ መሳሪያዎች።</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚰</div>
+        <h3>የቧንቧ እቃዎች</h3>
+        <p>የውሃ ቧንቧዎች እና ተያያዥ ዕቃዎች።</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>የኤሌክትሪክ እቃዎች</h3>
+        <p>ለቤት እና ለግንባታ የሚያገለግሉ የኤሌክትሪክ እቃዎች።</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🏪</div>
+        <h3>የጅምላ ሽያጭ</h3>
+        <p>ለነጋዴዎች የጅምላ አቅርቦት።</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>ስለ ETHIO REAL</h2>
+
+    <div class="contact">
+      <p>
+        ETHIO REAL የህንፃ መሳሪያዎች፣
+        የቧንቧ እና የኤሌክትሪክ እቃዎች
+        አቅራቢ ነው።
+      </p>
+
+      <p style="margin-top:15px;">
+        ጥራት • ተመጣጣኝ ዋጋ • እምነት • ፈጣን አገልግሎት
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>አግኙን</h2>
+
+    <div class="contact">
+      <p><strong>📞 ስልክ፦</strong> +251 976 213 646</p>
+
+      <a href="tel:+251976213646">📞 ይደውሉ</a>
+
+      <a href="https://t.me/Real_business76" target="_blank">
+        ✈️ Telegram
+      </a>
+
+      <p style="margin-top:20px;">
+        ለጅምላ ግዢ፣ ዋጋ እና ተጨማሪ መረጃ ያግኙን።
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 ETHIO REAL. All Rights Reserved.</p>
+    <p>የእርስዎ ታማኝ የእቃ አቅራቢ</p>
+  </footer>
+
+</body>
+</html>
