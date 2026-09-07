@@ -3,24 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ETHIO REAL | የጅምላ እቃ አቅራቢ</title>
+
+  <title>ETHIO REAL | የህንፃ መሳሪያዎች</title>
+
+  <meta name="description"
+        content="ETHIO REAL - የህንፃ መሳሪያ፣ የቧንቧ እና የኤሌክትሪክ እቃዎች አቅራቢ።">
 
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      font-family: Arial, "Noto Sans Ethiopic", sans-serif;
     }
 
     body {
-      font-family: Arial, sans-serif;
       background: #f5f7fa;
       color: #222;
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, #075985, #16a34a);
+      background: linear-gradient(135deg, #0b5ed7, #063b88);
       color: white;
       text-align: center;
       padding: 45px 20px;
@@ -28,74 +32,51 @@
 
     header h1 {
       font-size: 42px;
-      margin-bottom: 10px;
+      font-weight: 800;
+      letter-spacing: 2px;
     }
 
     header p {
+      margin-top: 10px;
       font-size: 18px;
-    }
-
-    nav {
-      background: white;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,.1);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      color: #075985;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
     }
 
     .hero {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 35px 20px;
       text-align: center;
-      padding: 45px 20px;
-      background: white;
     }
 
     .hero h2 {
-      color: #075985;
       font-size: 30px;
       margin-bottom: 15px;
+      color: #063b88;
     }
 
     .hero p {
+      font-size: 17px;
+      color: #555;
       max-width: 750px;
       margin: auto;
-      font-size: 18px;
-    }
-
-    .section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 45px 20px;
-    }
-
-    .section h2 {
-      text-align: center;
-      color: #075985;
-      margin-bottom: 30px;
-      font-size: 28px;
     }
 
     .products {
+      max-width: 1100px;
+      margin: 20px auto 50px;
+      padding: 0 20px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
 
     .card {
       background: white;
-      padding: 25px;
+      padding: 25px 20px;
       border-radius: 15px;
       text-align: center;
-      box-shadow: 0 3px 12px rgba(0,0,0,.1);
-      transition: .3s;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: 0.3s;
     }
 
     .card:hover {
@@ -103,62 +84,81 @@
     }
 
     .icon {
-      font-size: 48px;
-      margin-bottom: 10px;
+      font-size: 45px;
+      margin-bottom: 12px;
     }
 
     .card h3 {
-      color: #075985;
+      color: #063b88;
       margin-bottom: 8px;
     }
 
     .contact {
-      background: #075985;
-      color: white;
+      background: white;
+      padding: 40px 20px;
       text-align: center;
-      padding: 45px 20px;
     }
 
     .contact h2 {
+      color: #063b88;
       margin-bottom: 20px;
-      font-size: 30px;
     }
 
     .buttons {
+      max-width: 800px;
+      margin: auto;
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 12px;
-      margin-top: 25px;
     }
 
     .btn {
       display: inline-block;
-      padding: 13px 22px;
-      border-radius: 8px;
+      padding: 13px 20px;
+      border-radius: 10px;
+      color: white;
       text-decoration: none;
       font-weight: bold;
-      color: white;
-      background: #16a34a;
+      min-width: 150px;
+      transition: 0.2s;
     }
 
-    .btn.facebook {
-      background: #1877f2;
+    .btn:hover {
+      transform: scale(1.04);
+      opacity: 0.9;
     }
 
-    .btn.call {
-      background: #f59e0b;
+    .phone {
+      background: #222;
+    }
+
+    .whatsapp {
+      background: #25D366;
+    }
+
+    .telegram {
+      background: #229ED9;
+    }
+
+    .tiktok {
+      background: #111;
+    }
+
+    .facebook {
+      background: #1877F2;
     }
 
     footer {
-      background: #111827;
+      background: #063b88;
       color: white;
       text-align: center;
       padding: 25px 15px;
+      margin-top: 0;
     }
 
     footer p {
-      margin: 5px;
+      margin: 5px 0;
     }
 
     @media (max-width: 600px) {
@@ -166,9 +166,13 @@
         font-size: 32px;
       }
 
-      nav a {
-        display: inline-block;
-        margin: 5px;
+      .hero h2 {
+        font-size: 25px;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 320px;
       }
     }
   </style>
@@ -178,110 +182,80 @@
 
   <header>
     <h1>ETHIO REAL</h1>
-    <p>የህንፃ • የቧንቧ • የኤሌክትሪክ እቃዎች አቅራቢ</p>
+    <p>የህንፃ መሳሪያዎች እና አቅርቦት</p>
   </header>
 
-  <nav>
-    <a href="#home">መነሻ</a>
-    <a href="#products">ምርቶች</a>
-    <a href="#about">ስለ እኛ</a>
-    <a href="#contact">አግኙን</a>
-  </nav>
-
-  <section class="hero" id="home">
+  <section class="hero">
     <h2>እንኳን ወደ ETHIO REAL በደህና መጡ!</h2>
+
     <p>
-      ለነጋዴዎች እና ለጅምላ ገዢዎች የህንፃ፣
-      የቧንቧ፣ የመታጠቢያ ቤት እና የኤሌክትሪክ
-      እቃዎችን በተመጣጣኝ ዋጋ እናቀርባለን።
+      የህንፃ መሳሪያ፣ የቧንቧ እና የኤሌክትሪክ
+      እቃዎችን በጥራት እና በተመጣጣኝ ዋጋ
+      ለነጋዴዎች እና ለጅምላ ገዢዎች እናቀርባለን።
     </p>
-
-    <div class="buttons">
-      <a class="btn" href="https://wa.me/251976213646">
-        💬 WhatsApp
-      </a>
-
-      <a class="btn call" href="tel:+251976213646">
-        📞 ደውሉልን
-      </a>
-    </div>
   </section>
 
-  <section class="section" id="products">
-    <h2>የምናቀርባቸው ምርቶች</h2>
-
-    <div class="products">
-
-      <div class="card">
-        <div class="icon">🏗️</div>
-        <h3>የህንፃ እቃዎች</h3>
-        <p>የተለያዩ የህንፃ ግንባታ እቃዎች</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🚰</div>
-        <h3>የቧንቧ እቃዎች</h3>
-        <p>የውሃ እና የቧንቧ መሳሪያዎች</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🚿</div>
-        <h3>የመታጠቢያ ቤት</h3>
-        <p>የBathroom እቃዎች እና መሳሪያዎች</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🔌</div>
-        <h3>የኤሌክትሪክ እቃዎች</h3>
-        <p>የተለያዩ የኤሌክትሪክ እቃዎች</p>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="section" id="about">
-    <h2>ስለ ETHIO REAL</h2>
+  <section class="products">
 
     <div class="card">
-      <p>
-        ETHIO REAL ለነጋዴዎች እና ለጅምላ ገዢዎች
-        የህንፃ፣ የቧንቧ፣ የBathroom እና
-        የኤሌክትሪክ እቃዎችን የሚያቀርብ የንግድ ድርጅት ነው።
-      </p>
-
-      <br>
-
-      <p>
-        ✅ ተመጣጣኝ ዋጋ<br>
-        ✅ የታመነ አቅርቦት<br>
-        ✅ የጅምላ ሽያጭ<br>
-        ✅ Delivery አገልግሎት
-      </p>
+      <div class="icon">🏗️</div>
+      <h3>የህንፃ መሳሪያ</h3>
+      <p>ለግንባታ የሚያስፈልጉ የተለያዩ እቃዎች።</p>
     </div>
+
+    <div class="card">
+      <div class="icon">🚰</div>
+      <h3>የቧንቧ እቃዎች</h3>
+      <p>የቧንቧ እና የመጸዳጃ ቤት እቃዎች።</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💡</div>
+      <h3>የኤሌክትሪክ እቃዎች</h3>
+      <p>የተለያዩ የኤሌክትሪክ እቃዎች።</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📦</div>
+      <h3>ጅምላ አቅርቦት</h3>
+      <p>ለነጋዴዎች እና ለጅምላ ገዢዎች ልዩ አቅርቦት።</p>
+    </div>
+
   </section>
 
-  <section class="contact" id="contact">
+  <section class="contact">
 
-    <h2>አሁኑኑ ያግኙን</h2>
-
-    <p>📞 +251 976 213 646</p>
-
-    <p>💬 WhatsApp ላይ መልዕክት ይላኩልን</p>
+    <h2>እኛን ያግኙ</h2>
 
     <div class="buttons">
 
-      <a class="btn" href="https://wa.me/251976213646">
-        WhatsApp
+      <a class="btn phone"
+         href="tel:+251976213646">
+        📞 ስልክ
       </a>
 
-      <a class="btn call" href="tel:+251976213646">
-        ስልክ ይደውሉ
+      <a class="btn whatsapp"
+         href="https://wa.me/251976213646"
+         target="_blank">
+        🟢 WhatsApp
+      </a>
+
+      <a class="btn telegram"
+         href="https://t.me/real_business76"
+         target="_blank">
+        ✈️ Telegram
+      </a>
+
+      <a class="btn tiktok"
+         href="https://www.tiktok.com/@userbreal1234"
+         target="_blank">
+        🎵 TikTok
       </a>
 
       <a class="btn facebook"
          href="https://www.facebook.com/profile.php?id=61592991010649"
          target="_blank">
-        Facebook
+        📘 Facebook
       </a>
 
     </div>
@@ -289,8 +263,9 @@
   </section>
 
   <footer>
-    <p>© 2026 ETHIO REAL</p>
-    <p>የጅምላ እቃ አቅራቢ</p>
+    <p><strong>ETHIO REAL</strong></p>
+    <p>ጥራት • ታማኝነት • ተመጣጣኝ ዋጋ</p>
+    <p>© 2026 ETHIO REAL. All Rights Reserved.</p>
   </footer>
 
 </body>
