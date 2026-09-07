@@ -53,3 +53,33 @@ https://www.tiktok.com/@userbreal1234
 ### ጥራት • ታማኝነት • ተመጣጣኝ ዋጋ
 
 **ETHIO REAL – Your Trusted Building Materials Supplier! 🏗️**
+.contact {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 14px 20px;
+  margin: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.phone {
+  background: #2563eb;
+}
+
+.whatsapp {
+  background: #25d366;
+}
+
+.telegram {
+  background: #229ed9;
+}
+
+.tiktok {
+  background: #111;
+}
