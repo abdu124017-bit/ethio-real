@@ -148,14 +148,19 @@
   <p>🚚 የዴሊቨሪ አገልግሎት አለ</p>
 
   <a class="button" href="tel:+251976213646">📞 ይደውሉ</a>
-  <a class="button" href="https://wa.me/251976213646">💬 WhatsApp</a>
-</section>
-
-<section class="social">
-  <h2>Social Media</h2>
+  <a class="button" href="https://wa.me/251976213646">💬 WhatsApp</
+  <section class="social">
+  <h2>ይከተሉን</h2>
   <p style="text-align:center;">
-    Facebook | Instagram | WhatsApp
+    <a href="https://www.facebook.com/profile.php?id=61592991010649" target="_blank">📘 Facebook</a>
+    &nbsp; | &nbsp;
+    <a href="https://www.instagram.com/ethio.real" target="_blank">📸 Instagram</a>
+    &nbsp; | &nbsp;
+    <a href="https://www.tiktok.com/@userbreal1234" target="_blank">🎵 TikTok</a>
+    &nbsp; | &nbsp;
+    <a href="https://wa.me/251976213646" target="_blank">💬 WhatsApp</a>
   </p>
+</section>
 </section>
 
 <footer>
