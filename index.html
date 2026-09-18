@@ -587,6 +587,696 @@
       <div class="product">
         <h3>Hanging Light</h3>
         <div class="no-price">ዋጋ ለማወቅ ያግኙን</div>
+  
       </div>
 
-      <
+      <!DOCTYPE html>
+<html lang="am">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ETHIO REAL | የህንፃ መሳሪያዎች</title>
+
+<meta name="description"
+content="ETHIO REAL - የህንፃ፣ የቧንቧ እና የኤሌክትሪክ እቃዎች አቅራቢ">
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,"Noto Sans Ethiopic",sans-serif;
+  background:#f4f6f8;
+  color:#222;
+}
+
+header{
+  background:linear-gradient(135deg,#063f91,#087a3d);
+  color:white;
+  text-align:center;
+  padding:30px 15px;
+}
+
+.logo{
+  font-size:36px;
+  font-weight:900;
+  color:#ffd400;
+  letter-spacing:1px;
+}
+
+header h2{
+  margin-top:8px;
+  font-size:19px;
+}
+
+header p{
+  margin-top:8px;
+  font-size:14px;
+}
+
+.search-area{
+  background:white;
+  padding:18px 12px;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 2px 10px #ccc;
+}
+
+#search{
+  display:block;
+  width:100%;
+  max-width:750px;
+  margin:auto;
+  padding:14px 20px;
+  border:2px solid #075dcc;
+  border-radius:30px;
+  font-size:16px;
+  outline:none;
+}
+
+.categories{
+  background:white;
+  display:flex;
+  gap:10px;
+  overflow-x:auto;
+  padding:12px;
+  border-bottom:1px solid #ddd;
+}
+
+.categories button{
+  border:0;
+  border-radius:25px;
+  padding:12px 18px;
+  white-space:nowrap;
+  cursor:pointer;
+  font-weight:bold;
+  background:#e9ecef;
+}
+
+.categories button.active,
+.categories button:hover{
+  background:#075dcc;
+  color:white;
+}
+
+.container{
+  max-width:1150px;
+  margin:auto;
+  padding:15px;
+}
+
+.section{
+  margin-bottom:35px;
+}
+
+.section-title{
+  background:white;
+  border-left:6px solid #075dcc;
+  padding:14px;
+  margin:20px 0 15px;
+  border-radius:6px;
+}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:15px;
+}
+
+.product{
+  background:white;
+  border-radius:12px;
+  padding:18px;
+  box-shadow:0 3px 12px rgba(0,0,0,.10);
+  transition:.2s;
+}
+
+.product:hover{
+  transform:translateY(-3px);
+  box-shadow:0 6px 18px rgba(0,0,0,.15);
+}
+
+.product h3{
+  color:#064a9b;
+  margin-bottom:9px;
+}
+
+.product p{
+  margin:6px 0;
+}
+
+.price{
+  color:#087a3d;
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px !important;
+}
+
+.order{
+  display:inline-block;
+  margin-top:10px;
+  padding:9px 14px;
+  background:#25D366;
+  color:white;
+  text-decoration:none;
+  border-radius:20px;
+  font-weight:bold;
+}
+
+.hidden{
+  display:none !important;
+}
+
+.no-result{
+  display:none;
+  text-align:center;
+  padding:35px;
+  color:#777;
+  font-size:17px;
+}
+
+.contact{
+  background:#063f91;
+  color:white;
+  text-align:center;
+  padding:28px 15px;
+  margin-top:20px;
+}
+
+.contact h2{
+  color:#ffd400;
+  margin-bottom:12px;
+}
+
+.contact p{
+  margin:7px;
+}
+
+.social{
+  margin-top:15px;
+}
+
+.social a{
+  display:inline-block;
+  margin:5px;
+  padding:9px 14px;
+  border-radius:20px;
+  background:white;
+  color:#063f91;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:18px;
+  font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">ETHIO REAL</div>
+
+  <h2>የህንፃ መሳሪያዎች</h2>
+
+  <p>
+    በብዛት • በጥራት • በተመጣጣኝ ዋጋ
+  </p>
+
+  <p>
+    🏗️ የህንፃ • 🔧 የቧንቧ • ⚡ የኤሌክትሪክ
+  </p>
+
+</header>
+
+
+<div class="search-area">
+
+  <input
+    id="search"
+    type="search"
+    placeholder="🔍 እቃ ፈልግ..."
+    oninput="searchProducts()"
+  >
+
+</div>
+
+
+<div class="categories">
+
+  <button class="active"
+          onclick="filterCategory('all',this)">
+    🛒 ሁሉም
+  </button>
+
+  <button onclick="filterCategory('plumbing',this)">
+    🔧 የቧንቧ
+  </button>
+
+  <button onclick="filterCategory('electric',this)">
+    ⚡ የኤሌክትሪክ
+  </button>
+
+  <button onclick="filterCategory('construction',this)">
+    🧱 የህንፃ
+  </button>
+
+</div>
+
+
+<main class="container">
+
+
+<!-- =========================
+     የቧንቧ እቃዎች
+========================= -->
+
+<section class="section" data-category="plumbing">
+
+<h2 class="section-title">
+🔧 የቧንቧ እቃዎች
+</h2>
+
+<div class="products">
+
+<div class="product">
+<h3>የውሃ ቧንቧ</h3>
+<p>የተለያዩ መጠኖች</p>
+<p class="price">ዋጋ ይጠይቁ</p>
+<a class="order"
+href="https://wa.me/251976213646?text=የውሃ%20ቧንቧ%20ዋጋ%20እፈልጋለሁ">
+WhatsApp
+</a>
+</div>
+
+<div class="product">
+<h3>Elbow</h3>
+<p>የቧንቧ ክርን</p>
+<p class="price">ዋጋ ይጠይቁ</p>
+</div>
+
+<div class="product">
+<h3>Tee</h3>
+<p>የቧንቧ መከፋፈያ</p>
+<p class="price">ዋጋ ይጠይቁ</p>
+</div>
+
+<div class="product">
+<h3>Socket</h3>
+<p>የቧንቧ ማገናኛ</p>
+<p class="price">ዋጋ ይጠይቁ</p>
+</div>
+
+<div class="product">
+<h3>Valve</h3>
+<p>የውሃ መክፈቻ / መዝጊያ</p>
+<p class="price">ዋጋ ይጠይቁ</p>
+</div>
+
+<div class="product">
+<h3>PTFE Tape</h3>
+<p>የቧንቧ ቴፕ</p>
+<p class="price">ዋጋ ይጠይቁ</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- =========================
+     የኤሌክትሪክ እቃዎች
+========================= -->
+
+<section class="section" data-category="electric">
+
+<h2 class="section-title">
+⚡ የኤሌክትሪክ እቃዎች
+</h2>
+
+<div class="products">
+
+<div class="product">
+<h3>የኤሌክትሪክ ሽቦ</h3>
+<p>የተለያዩ መጠኖች</p>
+<p class="price">ዋጋ ይጠይቁ</p>
+</div>
+
+<div class="product">
+<h3>Switch</h3>
+<p>የመብራት ማብሪያ / ማጥፊያ</p>
+<p class="price">ዋጋ ይጠይቁ</p>
+</div>
+
+<div class="product">
+<h3>Socket</h3>
+<p>የኤሌክትሪክ ሶኬት</p>
+<p class="price">ዋጋ ይጠይቁ</p>
+</div>
+
+<div class="product">
+<h3>LED Bulb</h3>
+<p>የLED መብራት</p>
+<p class="price">ዋጋ ይጠይቁ</p>
+</div>
+
+<div class="product">
+<h3>MCB</h3>
+<p>የኤሌክትሪክ መከላከያ</p>
+<p class="price">ዋጋ ይጠይቁ</p>
+</div>
+
+<div class="product">
+<h3>Electrical Box</h3>
+<p>የኤሌክትሪክ ሳጥን</p>
+<p class="price">ዋጋ ይጠይቁ</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- =========================
+     የህንፃ መሳሪያዎች
+========================= -->
+
+<section class="section" data-category="construction">
+
+<h2 class="section-title">
+🧱 የህንፃ መሳሪያዎች
+</h2>
+
+<div class="products">
+
+
+<div class="product">
+<h3>ብሩሽ</h3>
+<p>መቶ አለቃ 1ኛ</p>
+<p class="price">330 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>ብሩሽ</h3>
+<p>መቶ አለቃ 2ኛ</p>
+<p class="price">225 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>3/14 ብሩሽ</h3>
+<p>ቁጥር 3</p>
+<p class="price">50 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>3/14 ብሩሽ</h3>
+<p>ቁጥር 2</p>
+<p class="price">32 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>3/14 ብሩሽ</h3>
+<p>ቁጥር 1</p>
+<p class="price">22 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>Steel Paint Brush</h3>
+<p>የብረት ቀለም ብሩሽ</p>
+<p class="price">130 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>መቶ አለቃ ቁልፍ</h3>
+<p>Yard / Gate Key</p>
+<p class="price">1000 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>Orlando ቁልፍ</h3>
+<p>Yard / Gate Key</p>
+<p class="price">770 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>ICSA ቁልፍ</h3>
+<p>Yard / Gate Key</p>
+<p class="price">700 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>Cobra Handle</h3>
+<p>የበር እጀታ</p>
+<p class="price">1000 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>ማስቲሽ (Mastic)</h3>
+<p>መቶ አለቃ • 1 KG</p>
+<p class="price">1100 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>Measuring Tape</h3>
+<p>5m Rubber • Carton</p>
+<p class="price">150 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>Measuring Tape</h3>
+<p>3m Rubber • Carton</p>
+<p class="price">102 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>Measuring Tape</h3>
+<p>3m Yellow • Carton</p>
+<p class="price">95 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>Measuring Tape</h3>
+<p>5m Glass • Carton</p>
+<p class="price">135 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>Measuring Tape</h3>
+<p>3m Glass • Carton</p>
+<p class="price">90 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>ኮንክሪት ሚስማር</h3>
+<p>ባለ 10 • Carton</p>
+<p class="price">340 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>ኮንክሪት ሚስማር</h3>
+<p>ባለ 8 • Carton</p>
+<p class="price">320 ብር</p>
+</div>
+
+
+<div class="product">
+<h3>ኮንክሪት ሚስማር</h3>
+<p>ባለ 6 • Carton</p>
+<p class="price">320 ብር</p>
+</div>
+
+</div>
+</section>
+
+
+<div id="noResult" class="no-result">
+❌ የፈለጉት እቃ አልተገኘም።
+</div>
+
+</main>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact">
+
+<h2>ETHIO REAL</h2>
+
+<p>📞 <strong>09 76 21 36 46</strong></p>
+
+<p>
+📍 መርካቶ ሶሳ የገበያ ማዕከል<br>
+Addis Ababa, Ethiopia
+</p>
+
+<p>
+🏗️ የህንፃ • 🔧 የቧንቧ • ⚡ የኤሌክትሪክ
+</p>
+
+<div class="social">
+
+<a href="https://wa.me/251976213646">
+WhatsApp
+</a>
+
+<a href="https://www.instagram.com/ethio.real">
+Instagram
+</a>
+
+<a href="https://www.tiktok.com/@userbreal1234">
+TikTok
+</a>
+
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026 ETHIO REAL — All Rights Reserved.
+
+</footer>
+
+
+<script>
+
+function filterCategory(category,button){
+
+  document
+  .querySelectorAll(".categories button")
+  .forEach(function(btn){
+    btn.classList.remove("active");
+  });
+
+  button.classList.add("active");
+
+  document
+  .querySelectorAll(".section")
+  .forEach(function(section){
+
+    if(category === "all"){
+      section.classList.remove("hidden");
+    }
+
+    else if(section.dataset.category === category){
+      section.classList.remove("hidden");
+    }
+
+    else{
+      section.classList.add("hidden");
+    }
+
+  });
+
+  document.getElementById("search").value="";
+
+  document
+  .querySelectorAll(".product")
+  .forEach(function(product){
+    product.classList.remove("hidden");
+  });
+
+  document.getElementById("noResult").style.display="none";
+}
+
+
+function searchProducts(){
+
+  let search =
+    document
+    .getElementById("search")
+    .value
+    .trim()
+    .toLowerCase();
+
+  let sections =
+    document.querySelectorAll(".section");
+
+  let found = false;
+
+
+  sections.forEach(function(section){
+
+    section.classList.remove("hidden");
+
+    let products =
+      section.querySelectorAll(".product");
+
+    let sectionFound = false;
+
+
+    products.forEach(function(product){
+
+      let text =
+        product.innerText.toLowerCase();
+
+      if(search === "" || text.includes(search)){
+
+        product.classList.remove("hidden");
+        sectionFound = true;
+        found = true;
+
+      }else{
+
+        product.classList.add("hidden");
+
+      }
+
+    });
+
+
+    if(!sectionFound && search !== ""){
+
+      section.classList.add("hidden");
+
+    }
+
+  });
+
+
+  if(search === ""){
+    document.getElementById("noResult").style.display="none";
+  }
+
+  else{
+
+    document.getElementById("noResult").style.display =
+      found ? "none" : "block";
+
+  }
+
+}
+
+</script>
+
+</body>
+</html>
