@@ -6,1024 +6,1326 @@
 
 <title>ETHIO REAL | የህንፃ መሳሪያዎች</title>
 
-<meta name="description"
-content="ETHIO REAL - የህንፃ መሳሪያ፣ የቧንቧ እና የኤሌክትሪክ እቃዎች አቅራቢ">
-
-<meta name="keywords"
-content="Ethio Real, construction materials Ethiopia, plumbing, electrical, Addis Ababa, Merkato">
+<meta name="description" content="ETHIO REAL - የህንፃ መሳሪያ፣ የቧንቧ እና የኤሌክትሪክ እቃዎች አቅራቢ። በብዛት ለነጋዴዎች።">
+<meta name="keywords" content="Ethio Real, construction materials Ethiopia, Merkato, plumbing, electrical, building materials">
+<meta name="author" content="ETHIO REAL">
 
 <style>
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
 html{
-    scroll-behavior:smooth;
+  scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial,"Noto Sans Ethiopic",sans-serif;
-    background:#f5f7fa;
-    color:#172033;
-    line-height:1.6;
+  font-family:Arial,"Noto Sans Ethiopic",sans-serif;
+  background:#f4f7f9;
+  color:#17202a;
+  line-height:1.6;
 }
 
 a{
-    text-decoration:none;
-}
-
-header{
-    background:linear-gradient(135deg,#063970,#0b74c9);
-    color:white;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 3px 15px rgba(0,0,0,.2);
-}
-
-.nav{
-    max-width:1200px;
-    margin:auto;
-    padding:14px 20px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:15px;
-}
-
-.logo{
-    font-size:25px;
-    font-weight:900;
-    letter-spacing:.5px;
-}
-
-.logo span{
-    color:#ffd21c;
-}
-
-nav{
-    display:flex;
-    gap:8px;
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-nav a{
-    color:white;
-    padding:8px 11px;
-    border-radius:8px;
-    font-weight:bold;
-}
-
-nav a:hover{
-    background:rgba(255,255,255,.15);
-}
-
-.lang-btn{
-    border:1px solid #fff;
-    background:transparent;
-    color:#fff;
-    padding:7px 10px;
-    border-radius:8px;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-.hero{
-    background:
-    linear-gradient(rgba(0,45,90,.82),rgba(0,45,90,.82)),
-    radial-gradient(circle at top,#1593df,#06284a);
-    color:#fff;
-    text-align:center;
-    padding:75px 20px;
-}
-
-.hero h1{
-    font-size:clamp(35px,7vw,65px);
-    margin-bottom:12px;
-}
-
-.hero h1 span{
-    color:#ffd21c;
-}
-
-.hero h2{
-    font-size:clamp(20px,4vw,30px);
-    margin-bottom:15px;
-}
-
-.hero p{
-    max-width:750px;
-    margin:auto;
-    font-size:18px;
-}
-
-.buttons{
-    margin-top:28px;
-    display:flex;
-    justify-content:center;
-    gap:12px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    display:inline-block;
-    padding:13px 22px;
-    border-radius:10px;
-    font-weight:bold;
-    transition:.2s;
-}
-
-.btn:hover{
-    transform:translateY(-2px);
-}
-
-.btn-primary{
-    background:#ffd21c;
-    color:#10233d;
-}
-
-.btn-whatsapp{
-    background:#25d366;
-    color:white;
-}
-
-.btn-outline{
-    border:2px solid white;
-    color:white;
+  text-decoration:none;
+  color:inherit;
 }
 
 .container{
-    max-width:1200px;
-    margin:auto;
-    padding:55px 20px;
+  width:min(1180px,92%);
+  margin:auto;
+}
+
+/* TOP BAR */
+.topbar{
+  background:#111827;
+  color:#fff;
+  padding:8px 0;
+  font-size:14px;
+}
+
+.topbar-content{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.topbar a{
+  color:#facc15;
+}
+
+/* HEADER */
+header{
+  background:#fff;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.nav{
+  min-height:75px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo-mark{
+  width:48px;
+  height:48px;
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  color:#fff;
+  font-weight:900;
+  font-size:20px;
+  background:linear-gradient(135deg,#0b5ed7,#facc15,#16803c);
+}
+
+.logo-text strong{
+  display:block;
+  color:#0b5ed7;
+  font-size:22px;
+  letter-spacing:1px;
+}
+
+.logo-text span{
+  font-size:11px;
+  color:#555;
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  list-style:none;
+}
+
+.nav-links a{
+  font-weight:700;
+  color:#263238;
+}
+
+.nav-links a:hover{
+  color:#0b5ed7;
+}
+
+.lang-btn{
+  border:0;
+  background:#0b5ed7;
+  color:#fff;
+  padding:9px 14px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.menu-btn{
+  display:none;
+  border:0;
+  background:#0b5ed7;
+  color:#fff;
+  font-size:23px;
+  padding:7px 12px;
+  border-radius:8px;
+}
+
+/* HERO */
+.hero{
+  background:
+    linear-gradient(120deg,rgba(5,35,75,.95),rgba(11,94,215,.82)),
+    radial-gradient(circle at top right,#facc15,transparent 30%);
+  color:#fff;
+  padding:80px 0;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.4fr .8fr;
+  gap:35px;
+  align-items:center;
+}
+
+.hero h1{
+  font-size:clamp(34px,6vw,62px);
+  line-height:1.1;
+  margin-bottom:18px;
+}
+
+.hero h1 span{
+  color:#facc15;
+}
+
+.hero p{
+  font-size:19px;
+  max-width:700px;
+  opacity:.95;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+
+.btn{
+  display:inline-block;
+  padding:13px 20px;
+  border-radius:10px;
+  font-weight:800;
+  border:2px solid transparent;
+  transition:.2s;
+}
+
+.btn-primary{
+  background:#facc15;
+  color:#111827;
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+}
+
+.btn-whatsapp{
+  background:#16803c;
+  color:#fff;
+}
+
+.btn-outline{
+  border-color:#fff;
+  color:#fff;
+}
+
+.hero-card{
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:20px;
+  padding:28px;
+  backdrop-filter:blur(8px);
+}
+
+.hero-card h3{
+  color:#facc15;
+  margin-bottom:12px;
+}
+
+.hero-card div{
+  padding:7px 0;
+}
+
+/* SECTION */
+section{
+  padding:65px 0;
 }
 
 .section-title{
-    text-align:center;
-    margin-bottom:30px;
+  text-align:center;
+  margin-bottom:35px;
 }
 
 .section-title h2{
-    font-size:32px;
-    color:#063970;
+  font-size:34px;
+  color:#123b67;
 }
 
 .section-title p{
-    color:#657080;
+  color:#667085;
 }
 
+/* SEARCH */
 .search-box{
-    max-width:700px;
-    margin:0 auto 35px;
-    position:relative;
+  max-width:700px;
+  margin:0 auto 30px;
+  position:relative;
 }
 
 .search-box input{
-    width:100%;
-    padding:16px 20px;
-    border:2px solid #d8dee8;
-    border-radius:12px;
-    font-size:17px;
-    outline:none;
+  width:100%;
+  padding:16px 20px;
+  border:2px solid #d7dee7;
+  border-radius:14px;
+  outline:none;
+  font-size:16px;
+  background:#fff;
 }
 
 .search-box input:focus{
-    border-color:#0b74c9;
+  border-color:#0b5ed7;
 }
 
-.categories{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    margin-bottom:40px;
+/* CATEGORIES */
+.category-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
 }
 
 .category{
-    background:white;
-    padding:25px;
-    border-radius:16px;
-    text-align:center;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-    cursor:pointer;
-    transition:.2s;
+  background:#fff;
+  padding:25px 15px;
+  text-align:center;
+  border-radius:16px;
+  box-shadow:0 5px 18px rgba(0,0,0,.06);
+  cursor:pointer;
+  border:2px solid transparent;
+  transition:.2s;
 }
 
 .category:hover{
-    transform:translateY(-5px);
+  border-color:#0b5ed7;
+  transform:translateY(-4px);
 }
 
-.category .icon{
-    font-size:45px;
-    margin-bottom:10px;
+.category-icon{
+  font-size:40px;
+  margin-bottom:8px;
 }
 
 .category h3{
-    color:#063970;
-    margin-bottom:7px;
+  color:#123b67;
 }
 
-.products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+/* PRODUCTS */
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
 }
 
-.product{
-    background:#fff;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-    transition:.2s;
+.product-card{
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 5px 18px rgba(0,0,0,.07);
+  transition:.2s;
 }
 
-.product:hover{
-    transform:translateY(-4px);
+.product-card:hover{
+  transform:translateY(-4px);
 }
 
 .product-image{
-    height:170px;
-    background:linear-gradient(135deg,#e8f2fb,#d6e6f5);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:65px;
+  height:150px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(135deg,#e8f1fb,#f8fafc);
+  font-size:55px;
 }
 
-.product-body{
-    padding:18px;
+.product-content{
+  padding:18px;
 }
 
-.product-body h3{
-    color:#063970;
-    margin-bottom:5px;
+.product-content h3{
+  color:#123b67;
+  margin-bottom:6px;
 }
 
-.product-body p{
-    color:#657080;
-    font-size:14px;
+.product-content p{
+  color:#667085;
+  font-size:14px;
+  min-height:44px;
 }
 
 .price{
-    margin-top:10px;
-    font-size:18px;
-    font-weight:bold;
-    color:#0b74c9;
+  color:#0b5ed7;
+  font-size:18px;
+  font-weight:900;
+  margin:10px 0;
 }
 
-.order-btn{
-    display:block;
-    margin-top:14px;
-    text-align:center;
-    background:#25d366;
-    color:#fff;
-    padding:10px;
-    border-radius:8px;
-    font-weight:bold;
+.order-small{
+  display:block;
+  text-align:center;
+  padding:10px;
+  background:#16803c;
+  color:#fff;
+  border-radius:8px;
+  font-weight:bold;
 }
 
-.price-table{
-    width:100%;
-    border-collapse:collapse;
-    background:#fff;
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,.07);
+/* PRICE LIST */
+.price-table-wrap{
+  overflow-x:auto;
+  background:#fff;
+  border-radius:15px;
+  box-shadow:0 5px 18px rgba(0,0,0,.06);
 }
 
-.price-table th,
-.price-table td{
-    padding:13px;
-    border-bottom:1px solid #e5e9ef;
-    text-align:left;
+table{
+  width:100%;
+  border-collapse:collapse;
+  min-width:650px;
 }
 
-.price-table th{
-    background:#063970;
-    color:#fff;
+th,td{
+  padding:13px 15px;
+  border-bottom:1px solid #e5e7eb;
+  text-align:left;
 }
 
-.price-table tr:hover{
-    background:#f4f8fc;
+th{
+  background:#123b67;
+  color:#fff;
 }
 
-.about{
-    background:#063970;
-    color:white;
+tr:hover td{
+  background:#f7fafc;
 }
 
-.about .section-title h2,
-.about .section-title p{
-    color:white;
+/* WHY */
+.why{
+  background:#eaf2fb;
 }
 
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.why-card{
+  background:#fff;
+  padding:28px;
+  border-radius:16px;
+  text-align:center;
+  box-shadow:0 4px 15px rgba(0,0,0,.05);
+}
+
+.why-card .icon{
+  font-size:38px;
+  margin-bottom:10px;
+}
+
+/* ABOUT */
 .about-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+  align-items:center;
 }
 
-.about-card{
-    background:rgba(255,255,255,.09);
-    padding:25px;
-    border-radius:15px;
+.about-box{
+  background:#fff;
+  padding:30px;
+  border-radius:18px;
+  box-shadow:0 5px 20px rgba(0,0,0,.06);
 }
 
-.about-card h3{
-    color:#ffd21c;
-    margin-bottom:10px;
+.about-box h3{
+  color:#0b5ed7;
+  margin-bottom:12px;
+}
+
+/* CONTACT */
+.contact{
+  background:#0b2745;
+  color:#fff;
 }
 
 .contact-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:18px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
 }
 
 .contact-card{
-    background:white;
-    padding:25px;
-    border-radius:14px;
-    box-shadow:0 5px 20px rgba(0,0,0,.07);
-    text-align:center;
+  background:rgba(255,255,255,.08);
+  padding:28px;
+  border-radius:18px;
 }
 
-.contact-card .icon{
-    font-size:35px;
-    margin-bottom:8px;
+.contact-item{
+  padding:12px 0;
+  border-bottom:1px solid rgba(255,255,255,.15);
 }
 
-.contact-card h3{
-    color:#063970;
-    margin-bottom:5px;
+.contact-item:last-child{
+  border-bottom:0;
 }
 
-.contact-card a{
-    color:#0b74c9;
-    font-weight:bold;
+.contact-item strong{
+  display:block;
+  color:#facc15;
+}
+
+.socials{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:20px;
 }
 
 .social{
-    display:flex;
-    justify-content:center;
-    gap:12px;
-    flex-wrap:wrap;
-    margin-top:30px;
+  padding:10px 14px;
+  background:#fff;
+  color:#123b67;
+  border-radius:8px;
+  font-weight:bold;
 }
 
-.social a{
-    padding:11px 18px;
-    border-radius:9px;
-    color:white;
-    font-weight:bold;
-}
-
-.facebook{background:#1877f2}
-.instagram{background:#c13584}
-.tiktok{background:#111}
-.telegram{background:#229ed9}
-
+/* FOOTER */
 footer{
-    background:#071827;
-    color:#fff;
-    text-align:center;
-    padding:30px 20px;
+  background:#071523;
+  color:#cbd5e1;
+  padding:25px 0;
+  text-align:center;
 }
 
-footer strong{
-    color:#ffd21c;
+.footer-links{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+  margin-top:10px;
 }
 
+.footer-links a{
+  color:#facc15;
+}
+
+/* FLOATING WHATSAPP */
 .whatsapp-float{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    width:58px;
-    height:58px;
-    border-radius:50%;
-    background:#25d366;
-    color:white;
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#16803c;
+  color:#fff;
+  font-size:30px;
+  box-shadow:0 5px 20px rgba(0,0,0,.25);
+  z-index:2000;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .hero-grid,
+  .about-grid,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .category-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .product-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .why-grid{
+    grid-template-columns:1fr;
+  }
+
+  .nav-links{
+    display:none;
+    position:absolute;
+    top:75px;
+    left:0;
+    right:0;
+    background:#fff;
+    padding:20px;
+    flex-direction:column;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+  }
+
+  .nav-links.show{
     display:flex;
-    align-items:center;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+}
+
+@media(max-width:550px){
+  .topbar-content{
     justify-content:center;
-    font-size:30px;
-    box-shadow:0 5px 20px rgba(0,0,0,.3);
-    z-index:2000;
-}
+    text-align:center;
+  }
 
-.hidden{
-    display:none!important;
-}
+  .hero{
+    padding:55px 0;
+  }
 
-.notice{
-    background:#fff8d8;
-    border-left:5px solid #ffd21c;
-    padding:15px;
-    margin:20px 0;
-    border-radius:8px;
-}
+  .hero h1{
+    font-size:38px;
+  }
 
-@media(max-width:700px){
-    .nav{
-        flex-direction:column;
-    }
+  .category-grid,
+  .product-grid{
+    grid-template-columns:1fr;
+  }
 
-    nav{
-        width:100%;
-    }
+  .hero-buttons .btn{
+    width:100%;
+    text-align:center;
+  }
 
-    nav a{
-        font-size:13px;
-    }
-
-    .hero{
-        padding:55px 18px;
-    }
-
-    .container{
-        padding:40px 15px;
-    }
-
-    .price-table{
-        font-size:14px;
-    }
-
-    .price-table th,
-    .price-table td{
-        padding:9px 7px;
-    }
+  section{
+    padding:45px 0;
+  }
 }
 </style>
 </head>
 
 <body>
 
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container topbar-content">
+    <div>📦 በብዛት • በጥራት • በተመጣጣኝ ዋጋ</div>
+    <div>📞 <a href="tel:+251976213646">+251 976 213 646</a></div>
+  </div>
+</div>
+
+<!-- HEADER -->
 <header>
-<div class="nav">
+  <div class="container nav">
 
-<div class="logo">
-ETHIO <span>REAL</span>
-</div>
+    <a href="#home" class="logo">
+      <div class="logo-mark">ER</div>
+      <div class="logo-text">
+        <strong>ETHIO REAL</strong>
+        <span>CONSTRUCTION MATERIAL SUPPLIER</span>
+      </div>
+    </a>
 
-<nav>
-<a href="#home">መነሻ</a>
-<a href="#products">እቃዎች</a>
-<a href="#prices">ዋጋ</a>
-<a href="#about">ስለእኛ</a>
-<a href="#contact">ያግኙን</a>
-</nav>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-<button class="lang-btn" onclick="toggleLanguage()">
-EN / አማ
-</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">መነሻ</a></li>
+      <li><a href="#products">እቃዎች</a></li>
+      <li><a href="#prices">ዋጋ</a></li>
+      <li><a href="#about">ስለ እኛ</a></li>
+      <li><a href="#contact">ያግኙን</a></li>
+      <li>
+        <button class="lang-btn" onclick="changeLanguage()">EN / አማ</button>
+      </li>
+    </ul>
 
-</div>
+  </div>
 </header>
 
-
+<!-- HERO -->
 <section class="hero" id="home">
+  <div class="container hero-grid">
 
-<h1>ETHIO <span>REAL</span></h1>
+    <div>
+      <h1>
+        ETHIO <span>REAL</span>
+      </h1>
 
-<h2>የህንፃ መሳሪያዎች አቅራቢ</h2>
+      <h2>የህንፃ መሳሪያዎች አቅራቢ</h2>
 
-<p id="heroText">
-የህንፃ፣ የቧንቧ፣ የኤሌክትሪክ እና
-የቤት ማስዋቢያ እቃዎችን በብዛት፣
-በጥራት እና በተመጣጣኝ ዋጋ እናቀርባለን።
-</p>
+      <p>
+        የህንፃ፣ የቧንቧ እና የኤሌክትሪክ እቃዎችን
+        በብዛት ለነጋዴዎች እና ለንግድ ተቋማት እናቀርባለን።
+      </p>
 
-<div class="buttons">
-<a class="btn btn-primary" href="#products">እቃዎችን ይመልከቱ</a>
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="#products">
+          🛒 እቃዎችን ይመልከቱ
+        </a>
 
-<a class="btn btn-whatsapp"
-href="https://wa.me/251976213646?text=ሰላም%20ETHIO%20REAL%2C%20የእቃ%20ዋጋ%20መረጃ%20እፈልጋለሁ">
-WhatsApp Order
-</a>
-</div>
+        <a class="btn btn-whatsapp"
+           href="https://wa.me/251976213646?text=ሰላም%20ETHIO%20REAL%2C%20የእቃ%20ዋጋ%20እፈልጋለሁ"
+           target="_blank">
+          💬 WhatsApp Order
+        </a>
+      </div>
+    </div>
 
+    <div class="hero-card">
+      <h3>📍 የእኛ አድራሻ</h3>
+
+      <div>🏢 መርካቶ ሶሳ የገበያ ማዕከል</div>
+      <div>📍 Addis Ababa, Ethiopia</div>
+      <div>📞 09 76 21 36 46</div>
+      <div>📦 በብዛት ለነጋዴዎች</div>
+
+      <a
+        class="btn btn-primary"
+        style="margin-top:15px;width:100%;text-align:center"
+        href="https://maps.app.goo.gl/bQ2ZNC4ZrUcfiP2f9"
+        target="_blank">
+        🗺️ Google Maps
+      </a>
+    </div>
+
+  </div>
 </section>
 
+<!-- CATEGORIES -->
+<section>
+  <div class="container">
 
-<section class="container" id="products">
+    <div class="section-title">
+      <h2>የእቃ ምድቦች</h2>
+      <p>የሚፈልጉትን የእቃ አይነት ይምረጡ</p>
+    </div>
 
-<div class="section-title">
-<h2>የምናቀርባቸው እቃዎች</h2>
-<p>በብዛት • በጥራት • በተመጣጣኝ ዋጋ</p>
-</div>
+    <div class="category-grid">
 
-<div class="search-box">
-<input
-type="search"
-id="search"
-placeholder="እቃ ይፈልጉ... / Search product..."
-onkeyup="searchProducts()">
-</div>
+      <div class="category" onclick="filterProducts('construction')">
+        <div class="category-icon">🏗️</div>
+        <h3>የህንፃ መሳሪያዎች</h3>
+        <p>Construction</p>
+      </div>
 
+      <div class="category" onclick="filterProducts('plumbing')">
+        <div class="category-icon">🚰</div>
+        <h3>የቧንቧ እቃዎች</h3>
+        <p>Plumbing</p>
+      </div>
 
-<div class="categories">
+      <div class="category" onclick="filterProducts('electrical')">
+        <div class="category-icon">⚡</div>
+        <h3>የኤሌክትሪክ እቃዎች</h3>
+        <p>Electrical</p>
+      </div>
 
-<div class="category" onclick="filterCategory('construction')">
-<div class="icon">🧱</div>
-<h3>የህንፃ መሳሪያ</h3>
-<p>Construction Materials</p>
-</div>
+      <div class="category" onclick="filterProducts('home')">
+        <div class="category-icon">🏠</div>
+        <h3>የቤት ማስዋቢያ</h3>
+        <p>Home & Decoration</p>
+      </div>
 
-<div class="category" onclick="filterCategory('plumbing')">
-<div class="icon">🚰</div>
-<h3>የቧንቧ እቃዎች</h3>
-<p>Plumbing Materials</p>
-</div>
+    </div>
 
-<div class="category" onclick="filterCategory('electrical')">
-<div class="icon">💡</div>
-<h3>የኤሌክትሪክ እቃዎች</h3>
-<p>Electrical Materials</p>
-</div>
-
-<div class="category" onclick="filterCategory('decoration')">
-<div class="icon">🏠</div>
-<h3>የቤት ማስዋቢያ</h3>
-<p>Home Decoration</p>
-</div>
-
-</div>
-
-
-<div class="products" id="productList">
-
-<div class="product" data-category="construction"
-data-name="መለኪያ ቴፕ measuring tape">
-
-<div class="product-image">📏</div>
-
-<div class="product-body">
-<h3>መለኪያ ቴፕ</h3>
-<p>Measuring Tape</p>
-<div class="price">ከ 90 ብር ጀምሮ</div>
-
-<a class="order-btn"
-href="https://wa.me/251976213646?text=የመለኪያ%20ቴፕ%20ዋጋ%20እፈልጋለሁ">
-Order
-</a>
-</div>
-</div>
-
-
-<div class="product" data-category="construction"
-data-name="ኮንክሪት ሚስማር concrete nail">
-
-<div class="product-image">🔨</div>
-
-<div class="product-body">
-<h3>ኮንክሪት ሚስማር</h3>
-<p>Concrete Nail</p>
-<div class="price">ከ 320 ብር / ካርቶን</div>
-
-<a class="order-btn"
-href="https://wa.me/251976213646?text=የኮንክሪት%20ሚስማር%20ዋጋ%20እፈልጋለሁ">
-Order
-</a>
-</div>
-</div>
-
-
-<div class="product" data-category="construction"
-data-name="ብሩሽ brush">
-
-<div class="product-image">🖌️</div>
-
-<div class="product-body">
-<h3>ብሩሽ</h3>
-<p>Paint Brush</p>
-<div class="price">ከ 22 ብር ጀምሮ</div>
-
-<a class="order-btn"
-href="https://wa.me/251976213646?text=የብሩሽ%20ዋጋ%20እፈልጋለሁ">
-Order
-</a>
-</div>
-</div>
-
-
-<div class="product" data-category="construction"
-data-name="ማስቲሽ mastic">
-
-<div class="product-image">🧰</div>
-
-<div class="product-body">
-<h3>ማስቲሽ</h3>
-<p>Mastic</p>
-<div class="price">1kg — 1,100 ብር</div>
-
-<a class="order-btn"
-href="https://wa.me/251976213646?text=የማስቲሽ%20ዋጋ%20እፈልጋለሁ">
-Order
-</a>
-</div>
-</div>
-
-
-<div class="product" data-category="plumbing"
-data-name="የቧንቧ እቃ plumbing">
-
-<div class="product-image">🚰</div>
-
-<div class="product-body">
-<h3>የቧንቧ እቃዎች</h3>
-<p>Pipes, fittings & accessories</p>
-<div class="price">ዋጋ ይጠይቁ</div>
-
-<a class="order-btn"
-href="https://wa.me/251976213646?text=የቧንቧ%20እቃዎች%20ዋጋ%20እፈልጋለሁ">
-Order
-</a>
-</div>
-</div>
-
-
-<div class="product" data-category="electrical"
-data-name="የኤሌክትሪክ electrical">
-
-<div class="product-image">💡</div>
-
-<div class="product-body">
-<h3>የኤሌክትሪክ እቃዎች</h3>
-<p>Electrical Materials</p>
-<div class="price">ዋጋ ይጠይቁ</div>
-
-<a class="order-btn"
-href="https://wa.me/251976213646?text=የኤሌክትሪክ%20እቃዎች%20ዋጋ%20እፈልጋለሁ">
-Order
-</a>
-</div>
-</div>
-
-
-<div class="product" data-category="decoration"
-data-name="የቤት ማስዋቢያ decoration">
-
-<div class="product-image">🏠</div>
-
-<div class="product-body">
-<h3>የቤት ማስዋቢያ</h3>
-<p>Home Decoration</p>
-<div class="price">ዋጋ ይጠይቁ</div>
-
-<a class="order-btn"
-href="https://wa.me/251976213646?text=የቤት%20ማስዋቢያ%20እቃ%20ዋጋ%20እፈልጋለሁ">
-Order
-</a>
-</div>
-</div>
-
-</div>
+  </div>
 </section>
 
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="container">
 
-<section class="container" id="prices">
+    <div class="section-title">
+      <h2>የእቃ ዝርዝር</h2>
+      <p>የሚፈልጉትን እቃ ይፈልጉ</p>
+    </div>
 
-<div class="section-title">
-<h2>የዋጋ ዝርዝር</h2>
-<p>ETHIO REAL Price List</p>
-</div>
+    <div class="search-box">
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="🔎 እቃ ስም ይፈልጉ..."
+        oninput="searchProducts()">
+    </div>
 
-<div class="notice">
-<strong>ማስታወሻ፦</strong>
-ዋጋዎች በገበያ ሁኔታ ሊለዋወጡ ስለሚችሉ
-የመጨረሻ ዋጋ በWhatsApp ወይም በስልክ ያረጋግጡ።
-</div>
+    <div class="product-grid" id="productGrid">
 
-<table class="price-table">
+      <!-- CONSTRUCTION -->
+      <article class="product-card" data-category="construction" data-name="ብሩሽ መቶ አለቃ">
+        <div class="product-image">🖌️</div>
+        <div class="product-content">
+          <h3>ብሩሽ መቶ አለቃ</h3>
+          <p>የቀለም ብሩሽ</p>
+          <div class="price">330 ብር</div>
+          <a class="order-small" href="https://wa.me/251976213646?text=ብሩሽ%20መቶ%20አለቃ%20እፈልጋለሁ" target="_blank">Order</a>
+        </div>
+      </article>
 
-<thead>
-<tr>
-<th>እቃ</th>
-<th>መጠን</th>
-<th>ዋጋ</th>
-</tr>
-</thead>
+      <article class="product-card" data-category="construction" data-name="ብሩሽ 3 14">
+        <div class="product-image">🖌️</div>
+        <div class="product-content">
+          <h3>ብሩሽ 3/14</h3>
+          <p>የቀለም ብሩሽ</p>
+          <div class="price">ከ 22 ብር</div>
+          <a class="order-small" href="https://wa.me/251976213646?text=ብሩሽ%203%2F14%20እፈልጋለሁ" target="_blank">Order</a>
+        </div>
+      </article>
 
-<tbody>
+      <article class="product-card" data-category="construction" data-name="steel paint brush">
+        <div class="product-image">🔧</div>
+        <div class="product-content">
+          <h3>Steel Paint Brush</h3>
+          <p>የብረት ብሩሽ</p>
+          <div class="price">130 ብር</div>
+          <a class="order-small" href="https://wa.me/251976213646?text=Steel%20Paint%20Brush%20እፈልጋለሁ" target="_blank">Order</a>
+        </div>
+      </article>
 
-<tr>
-<td>ብሩሽ — መቶ አለቃ</td>
-<td>1ኛ</td>
-<td>330 ብር</td>
-</tr>
+      <article class="product-card" data-category="construction" data-name="መለኪያ ቴፕ">
+        <div class="product-image">📏</div>
+        <div class="product-content">
+          <h3>መለኪያ ቴፕ</h3>
+          <p>Measuring Tape</p>
+          <div class="price">ከ 90 ብር</div>
+          <a class="order-small" href="https://wa.me/251976213646?text=መለኪያ%20ቴፕ%20እፈልጋለሁ" target="_blank">Order</a>
+        </div>
+      </article>
 
-<tr>
-<td>ብሩሽ — መቶ አለቃ</td>
-<td>2ኛ</td>
-<td>225 ብር</td>
-</tr>
+      <article class="product-card" data-category="construction" data-name="concrete nails">
+        <div class="product-image">🔩</div>
+        <div class="product-content">
+          <h3>Concrete Nails</h3>
+          <p>የኮንክሪት ሚስማር</p>
+          <div class="price">ከ 320 ብር</div>
+          <a class="order-small" href="https://wa.me/251976213646?text=Concrete%20Nails%20እፈልጋለሁ" target="_blank">Order</a>
+        </div>
+      </article>
 
-<tr>
-<td>ብሩሽ</td>
-<td>3</td>
-<td>50 ብር</td>
-</tr>
+      <article class="product-card" data-category="construction" data-name="mastic">
+        <div class="product-image">🪣</div>
+        <div class="product-content">
+          <h3>ማስቲሽ</h3>
+          <p>Mastic</p>
+          <div class="price">ከ 1,100 ብር</div>
+          <a class="order-small" href="https://wa.me/251976213646?text=ማስቲሽ%20እፈልጋለሁ" target="_blank">Order</a>
+        </div>
+      </article>
 
-<tr>
-<td>ብሩሽ</td>
-<td>2</td>
-<td>32 ብር</td>
-</tr>
+      <!-- PLUMBING -->
+      <article class="product-card" data-category="plumbing" data-name="የቧንቧ እቃዎች">
+        <div class="product-image">🚰</div>
+        <div class="product-content">
+          <h3>የቧንቧ እቃዎች</h3>
+          <p>Pipe & Plumbing Supplies</p>
+          <div class="price">ዋጋ ይጠይቁ</div>
+          <a class="order-small" href="https://wa.me/251976213646?text=የቧንቧ%20እቃዎች%20ዋጋ%20እፈልጋለሁ" target="_blank">Order</a>
+        </div>
+      </article>
 
-<tr>
-<td>ብሩሽ</td>
-<td>1</td>
-<td>22 ብር</td>
-</tr>
+      <article class="product-card" data-category="plumbing" data-name="pipe fittings">
+        <div class="product-image">🔧</div>
+        <div class="product-content">
+          <h3>Pipe Fittings</h3>
+          <p>የቧንቧ መገጣጠሚያዎች</p>
+          <div class="price">ዋጋ ይጠይቁ</div>
+          <a class="order-small" href="https://wa.me/251976213646?text=Pipe%20Fittings%20እፈልጋለሁ" target="_blank">Order</a>
+        </div>
+      </article>
 
-<tr>
-<td>Steel Paint Brush</td>
-<td>—</td>
-<td>130 ብር</td>
-</tr>
+      <article class="product-card" data-category="plumbing" data-name="faucet">
+        <div class="product-image">🚿</div>
+        <div class="product-content">
+          <h3>Faucet</h3>
+          <p>የውሃ መክፈቻ</p>
+          <div class="price">ዋጋ ይጠይቁ</div>
+          <a class="order-small" href="https://wa.me/251976213646?text=Faucet%20እፈልጋለሁ" target="_blank">Order</a>
+        </div>
+      </article>
 
-<tr>
-<td>ሜዠር — Rubber</td>
-<td>5m / Carton</td>
-<td>150 ብር</td>
-</tr>
+      <!-- ELECTRICAL -->
+      <article class="product-card" data-category="electrical" data-name="switch">
+        <div class="product-image">💡</div>
+        <div class="product-content">
+          <h3>Switch</h3>
+          <p>የኤሌክትሪክ ስዊች</p>
+          <div class="price">ዋጋ ይጠይቁ</div>
+          <a class="order-small" href="https://wa.me/251976213646?text=Switch%20እፈልጋለሁ" target="_blank">Order</a>
+        </div>
+      </article>
 
-<tr>
-<td>ሜዠር — Rubber</td>
-<td>3m / Carton</td>
-<td>102 ብር</td>
-</tr>
+      <article class="product-card" data-category="electrical" data-name="socket">
+        <div class="product-image">🔌</div>
+        <div class="product-content">
+          <h3>Socket</h3>
+          <p>የኤሌክትሪክ ሶኬት</p>
+          <div class="price">ዋጋ ይጠይቁ</div>
+          <a class="order-small" href="https://wa.me/251976213646?text=Socket%20እፈልጋለሁ" target="_blank">Order</a>
+        </div>
+      </article>
 
-<tr>
-<td>ሜዠር — Yellow</td>
-<td>3m / Carton</td>
-<td>95 ብር</td>
-</tr>
+      <article class="product-card" data-category="electrical" data-name="electric cable">
+        <div class="product-image">🔌</div>
+        <div class="product-content">
+          <h3>Electric Cable</h3>
+          <p>የኤሌክትሪክ ገመድ</p>
+          <div class="price">ዋጋ ይጠይቁ</div>
+          <a class="order-small" href="https://wa.me/251976213646?text=Electric%20Cable%20እፈልጋለሁ" target="_blank">Order</a>
+        </div>
+      </article>
 
-<tr>
-<td>ሜዠር — Glass</td>
-<td>5m / Carton</td>
-<td>135 ብር</td>
-</tr>
+      <!-- HOME -->
+      <article class="product-card" data-category="home" data-name="door handle">
+        <div class="product-image">🚪</div>
+        <div class="product-content">
+          <h3>Door Handle</h3>
+          <p>የበር እጀታ</p>
+          <div class="price">ዋጋ ይጠይቁ</div>
+          <a class="order-small" href="https://wa.me/251976213646?text=Door%20Handle%20እፈልጋለሁ" target="_blank">Order</a>
+        </div>
+      </article>
 
-<tr>
-<td>ሜዠር — Glass</td>
-<td>3m / Carton</td>
-<td>90 ብር</td>
-</tr>
+      <article class="product-card" data-category="home" data-name="gate key">
+        <div class="product-image">🔑</div>
+        <div class="product-content">
+          <h3>የያርድ / ጌት ቁልፍ</h3>
+          <p>መቶ አለቃ • Orlando • ICSA</p>
+          <div class="price">ከ 700 ብር</div>
+          <a class="order-small" href="https://wa.me/251976213646?text=የጌት%20ቁልፍ%20እፈልጋለሁ" target="_blank">Order</a>
+        </div>
+      </article>
 
-<tr>
-<td>ማስቲሽ</td>
-<td>1kg</td>
-<td>1,100 ብር</td>
-</tr>
+    </div>
 
-<tr>
-<td>ኮንክሪት ሚስማር</td>
-<td>10 / Carton</td>
-<td>340 ብር</td>
-</tr>
+    <p id="noResults" style="display:none;text-align:center;padding:30px;color:#777;">
+      የፈለጉት እቃ አልተገኘም።
+    </p>
 
-<tr>
-<td>ኮንክሪት ሚስማር</td>
-<td>8 / Carton</td>
-<td>320 ብር</td>
-</tr>
-
-<tr>
-<td>ኮንክሪት ሚስማር</td>
-<td>6 / Carton</td>
-<td>320 ብር</td>
-</tr>
-
-</tbody>
-</table>
-
+  </div>
 </section>
 
+<!-- PRICE LIST -->
+<section id="prices" style="background:#f8fafc;">
+  <div class="container">
 
-<section class="about" id="about">
+    <div class="section-title">
+      <h2>💰 የዋጋ ዝርዝር</h2>
+      <p>የተወሰኑ የእቃ ዋጋዎች</p>
+    </div>
 
-<div class="container">
+    <div class="price-table-wrap">
+      <table>
 
-<div class="section-title">
-<h2>ስለ ETHIO REAL</h2>
-<p>Construction Material Supplier</p>
-</div>
+        <thead>
+          <tr>
+            <th>እቃ</th>
+            <th>መጠን / አይነት</th>
+            <th>ዋጋ</th>
+          </tr>
+        </thead>
 
-<div class="about-grid">
+        <tbody>
 
-<div class="about-card">
-<h3>🏢 ምን እንሰራለን?</h3>
-<p>
-ETHIO REAL የህንፃ፣ የቧንቧ፣
-የኤሌክትሪክ እና የቤት ማስዋቢያ
-እቃዎችን በብዛት የሚያቀርብ ንግድ ነው።
-</p>
-</div>
+          <tr>
+            <td>ብሩሽ</td>
+            <td>መቶ አለቃ 1ኛ</td>
+            <td>330 ብር</td>
+          </tr>
 
-<div class="about-card">
-<h3>📦 በብዛት ሽያጭ</h3>
-<p>
-ለነጋዴዎች፣ ለሱቆች እና
-ለንግድ ደንበኞች የብዛት እቃ
-አቅርቦት እናደርጋለን።
-</p>
-</div>
+          <tr>
+            <td>ብሩሽ</td>
+            <td>መቶ አለቃ 2ኛ</td>
+            <td>225 ብር</td>
+          </tr>
 
-<div class="about-card">
-<h3>🚚 አቅርቦት</h3>
-<p>
-በአዲስ አበባ እና በክልሎች
-ላሉ ደንበኞች የእቃ ማድረስ
-አገልግሎት እንደ አስፈላጊነቱ እናቀርባለን።
-</p>
-</div>
+          <tr>
+            <td>ብሩሽ 3/14</td>
+            <td>3</td>
+            <td>50 ብር</td>
+          </tr>
 
-</div>
-</div>
+          <tr>
+            <td>ብሩሽ 3/14</td>
+            <td>2</td>
+            <td>32 ብር</td>
+          </tr>
+
+          <tr>
+            <td>ብሩሽ 3/14</td>
+            <td>1</td>
+            <td>22 ብር</td>
+          </tr>
+
+          <tr>
+            <td>Steel Paint Brush</td>
+            <td>1</td>
+            <td>130 ብር</td>
+          </tr>
+
+          <tr>
+            <td>የጌት ቁልፍ</td>
+            <td>መቶ አለቃ</td>
+            <td>1,000 ብር</td>
+          </tr>
+
+          <tr>
+            <td>የጌት ቁልፍ</td>
+            <td>Orlando</td>
+            <td>770 ብር</td>
+          </tr>
+
+          <tr>
+            <td>የጌት ቁልፍ</td>
+            <td>ICSA</td>
+            <td>700 ብር</td>
+          </tr>
+
+          <tr>
+            <td>Cobra Handle</td>
+            <td>1</td>
+            <td>1,000 ብር</td>
+          </tr>
+
+          <tr>
+            <td>ማስቲሽ</td>
+            <td>1 kg</td>
+            <td>1,100 ብር</td>
+          </tr>
+
+          <tr>
+            <td>Measuring Tape</td>
+            <td>3m Rubber</td>
+            <td>102 ብር</td>
+          </tr>
+
+          <tr>
+            <td>Measuring Tape</td>
+            <td>5m Rubber</td>
+            <td>150 ብር</td>
+          </tr>
+
+          <tr>
+            <td>Measuring Tape</td>
+            <td>3m Yellow</td>
+            <td>95 ብር</td>
+          </tr>
+
+          <tr>
+            <td>Measuring Tape</td>
+            <td>5m Glass</td>
+            <td>135 ብር</td>
+          </tr>
+
+          <tr>
+            <td>Measuring Tape</td>
+            <td>3m Glass</td>
+            <td>90 ብር</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+    </div>
+
+    <p style="text-align:center;margin-top:18px;color:#667085;">
+      * ዋጋዎች ሊለወጡ ስለሚችሉ ከመግዛትዎ በፊት ያረጋግጡ።
+    </p>
+
+  </div>
 </section>
 
+<!-- WHY ETHIO REAL -->
+<section class="why">
+  <div class="container">
 
-<section class="container" id="contact">
+    <div class="section-title">
+      <h2>ለምን ETHIO REAL?</h2>
+      <p>ለነጋዴዎች የተዘጋጀ አገልግሎት</p>
+    </div>
 
-<div class="section-title">
-<h2>ያግኙን</h2>
-<p>Contact ETHIO REAL</p>
-</div>
+    <div class="why-grid">
 
-<div class="contact-grid">
+      <div class="why-card">
+        <div class="icon">📦</div>
+        <h3>በብዛት</h3>
+        <p>ለነጋዴዎች የጅምላ አቅርቦት</p>
+      </div>
 
-<div class="contact-card">
-<div class="icon">📞</div>
-<h3>ስልክ</h3>
-<a href="tel:+251976213646">
-09 76 21 36 46
-</a>
-</div>
+      <div class="why-card">
+        <div class="icon">💰</div>
+        <h3>ተመጣጣኝ ዋጋ</h3>
+        <p>ለብዛት ግዢ ተስማሚ ዋጋ</p>
+      </div>
 
+      <div class="why-card">
+        <div class="icon">🚚</div>
+        <h3>አቅርቦት</h3>
+        <p>ወደ ደንበኛው አካባቢ ለማድረስ እንሰራለን</p>
+      </div>
 
-<div class="contact-card">
-<div class="icon">💬</div>
-<h3>WhatsApp</h3>
-<a href="https://wa.me/251976213646">
-WhatsApp ይላኩ
-</a>
-</div>
+    </div>
 
-
-<div class="contact-card">
-<div class="icon">📍</div>
-<h3>አድራሻ</h3>
-<p>
-መርካቶ ሶሳ የገበያ ማዕከል<br>
-አዲስ አበባ፣ ኢትዮጵያ
-</p>
-</div>
-
-</div>
-
-
-<div class="social">
-
-<a class="facebook"
-href="https://www.facebook.com/profile.php?id=61592991010649"
-target="_blank">
-Facebook
-</a>
-
-<a class="instagram"
-href="https://www.instagram.com/ethio.real"
-target="_blank">
-Instagram
-</a>
-
-<a class="tiktok"
-href="https://www.tiktok.com/@userbreal1234"
-target="_blank">
-TikTok
-</a>
-
-<a class="telegram"
-href="https://t.me/Real_business76"
-target="_blank">
-Telegram
-</a>
-
-</div>
-
-</div>
+  </div>
 </section>
 
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
 
+    <div class="section-title">
+      <h2>ስለ ETHIO REAL</h2>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-box">
+        <h3>🏗️ አንድ ቦታ — ብዙ እቃዎች</h3>
+
+        <p>
+          ETHIO REAL የህንፃ መሳሪያዎች፣
+          የቧንቧ እቃዎች፣ የኤሌክትሪክ እቃዎች
+          እና የቤት ማስዋቢያ እቃዎችን
+          ለነጋዴዎች በብዛት ለማቅረብ የሚሰራ
+          የንግድ ድርጅት ነው።
+        </p>
+      </div>
+
+      <div class="about-box">
+        <h3>📍 የንግድ ቦታችን</h3>
+
+        <p>
+          <strong>መርካቶ ሶሳ የገበያ ማዕከል</strong><br>
+          Addis Ababa, Ethiopia
+        </p>
+
+        <br>
+
+        <p>
+          ለዋጋ፣ ለእቃ መገኘት እና ለብዛት ትዕዛዝ
+          በWhatsApp ወይም በስልክ ያግኙን።
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+
+    <div class="section-title">
+      <h2 style="color:#fff;">ያግኙን</h2>
+      <p style="color:#cbd5e1;">ለትዕዛዝ እና ለጥያቄ ያግኙን</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+
+        <div class="contact-item">
+          <strong>📞 Phone</strong>
+          <a href="tel:+251976213646">
+            +251 976 213 646
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <strong>💬 WhatsApp</strong>
+          <a href="https://wa.me/251976213646" target="_blank">
+            WhatsApp Chat
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <strong>📍 Address</strong>
+          መርካቶ ሶሳ የገበያ ማዕከል<br>
+          Addis Ababa, Ethiopia
+        </div>
+
+        <div class="contact-item">
+          <strong>🚚 Service</strong>
+          በብዛት ለነጋዴዎች
+        </div>
+
+        <div class="socials">
+
+          <a class="social"
+             href="https://www.facebook.com/profile.php?id=61592991010649"
+             target="_blank">
+            Facebook
+          </a>
+
+          <a class="social"
+             href="https://www.instagram.com/ethio.real"
+             target="_blank">
+            Instagram
+          </a>
+
+          <a class="social"
+             href="https://www.tiktok.com/@userbreal1234"
+             target="_blank">
+            TikTok
+          </a>
+
+          <a class="social"
+             href="https://t.me/Real_business76"
+             target="_blank">
+            Telegram
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="contact-card">
+
+        <h3 style="color:#facc15;margin-bottom:15px;">
+          📦 የብዛት ትዕዛዝ
+        </h3>
+
+        <p>
+          የሚፈልጉትን እቃ ስም፣ መጠን እና ብዛት
+          በWhatsApp ይላኩልን።
+        </p>
+
+        <a
+          class="btn btn-whatsapp"
+          style="margin-top:20px;width:100%;text-align:center"
+          href="https://wa.me/251976213646?text=ሰላም%20ETHIO%20REAL%2C%20የብዛት%20ትዕዛዝ%20ለመስጠት%20እፈልጋለሁ።"
+          target="_blank">
+          💬 WhatsApp Order
+        </a>
+
+        <a
+          class="btn btn-primary"
+          style="margin-top:10px;width:100%;text-align:center"
+          href="tel:+251976213646">
+          📞 አሁን ይደውሉ
+        </a>
+
+        <a
+          class="btn btn-outline"
+          style="margin-top:10px;width:100%;text-align:center"
+          href="https://maps.app.goo.gl/bQ2ZNC4ZrUcfiP2f9"
+          target="_blank">
+          🗺️ ካርታ ይክፈቱ
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
+  <div class="container">
 
-<p>
-<strong>ETHIO REAL</strong> © 2026
-</p>
+    <strong style="color:#fff;font-size:20px;">
+      ETHIO REAL
+    </strong>
 
-<p>
-የህንፃ መሳሪያ • የቧንቧ እቃ • የኤሌክትሪክ እቃ
-</p>
+    <p>
+      የህንፃ መሳሪያ • የቧንቧ • የኤሌክትሪክ • የቤት ማስዋቢያ
+    </p>
 
-<p>
-Construction Material Supplier
-</p>
+    <div class="footer-links">
+      <a href="#home">መነሻ</a>
+      <a href="#products">እቃዎች</a>
+      <a href="#prices">ዋጋ</a>
+      <a href="#about">ስለ እኛ</a>
+      <a href="#contact">ያግኙን</a>
+    </div>
 
+    <p style="margin-top:15px;font-size:13px;">
+      © <span id="year"></span> ETHIO REAL. All Rights Reserved.
+    </p>
+
+  </div>
 </footer>
 
-
-<a class="whatsapp-float"
-href="https://wa.me/251976213646"
-target="_blank"
-aria-label="WhatsApp">
-💬
+<!-- FLOATING WHATSAPP -->
+<a
+  class="whatsapp-float"
+  href="https://wa.me/251976213646?text=ሰላም%20ETHIO%20REAL"
+  target="_blank"
+  aria-label="WhatsApp">
+  ☎
 </a>
-
 
 <script>
 
+/* MENU */
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("show");
+}
+
+/* CLOSE MENU AFTER CLICK */
+document.querySelectorAll(".nav-links a").forEach(function(link){
+  link.addEventListener("click",function(){
+    document.getElementById("navLinks").classList.remove("show");
+  });
+});
+
+/* SEARCH */
 function searchProducts(){
 
-    const input =
-    document.getElementById("search")
+  const input =
+    document.getElementById("searchInput")
     .value
     .toLowerCase()
     .trim();
 
-    const products =
-    document.querySelectorAll(".product");
+  const products =
+    document.querySelectorAll(".product-card");
 
-    products.forEach(product => {
+  let found = 0;
 
-        const name =
-        product.dataset.name.toLowerCase();
+  products.forEach(function(product){
 
-        const text =
-        product.innerText.toLowerCase();
+    const name =
+      (product.dataset.name || "")
+      .toLowerCase();
 
-        if(name.includes(input) || text.includes(input)){
-            product.classList.remove("hidden");
-        }else{
-            product.classList.add("hidden");
-        }
+    const text =
+      product.innerText.toLowerCase();
 
-    });
-}
-
-
-function filterCategory(category){
-
-    const products =
-    document.querySelectorAll(".product");
-
-    products.forEach(product => {
-
-        if(product.dataset.category === category){
-            product.classList.remove("hidden");
-        }else{
-            product.classList.add("hidden");
-        }
-
-    });
-
-    document
-    .getElementById("products")
-    .scrollIntoView({
-        behavior:"smooth"
-    });
-}
-
-
-function toggleLanguage(){
-
-    const current =
-    document.documentElement.lang;
-
-    if(current === "am"){
-
-        document.documentElement.lang = "en";
-
-        document.querySelector(".hero h2").innerText =
-        "Construction Material Supplier";
-
-        document.getElementById("heroText").innerText =
-        "We supply construction, plumbing, electrical and home decoration materials in bulk with quality and competitive prices.";
-
+    if(name.includes(input) || text.includes(input)){
+      product.style.display = "";
+      found++;
     }else{
-
-        document.documentElement.lang = "am";
-
-        document.querySelector(".hero h2").innerText =
-        "የህንፃ መሳሪያዎች አቅራቢ";
-
-        document.getElementById("heroText").innerText =
-        "የህንፃ፣ የቧንቧ፣ የኤሌክትሪክ እና የቤት ማስዋቢያ እቃዎችን በብዛት፣ በጥራት እና በተመጣጣኝ ዋጋ እናቀርባለን።";
+      product.style.display = "none";
     }
 
+  });
+
+  document.getElementById("noResults").style.display =
+    found === 0 ? "block" : "none";
 }
+
+/* CATEGORY FILTER */
+function filterProducts(category){
+
+  const products =
+    document.querySelectorAll(".product-card");
+
+  let found = 0;
+
+  products.forEach(function(product){
+
+    if(product.dataset.category === category){
+      product.style.display = "";
+      found++;
+    }else{
+      product.style.display = "none";
+    }
+
+  });
+
+  document.getElementById("searchInput").value = "";
+
+  document.getElementById("noResults").style.display =
+    found === 0 ? "block" : "none";
+
+  document.getElementById("products")
+    .scrollIntoView({behavior:"smooth"});
+}
+
+/* LANGUAGE BUTTON */
+function changeLanguage(){
+
+  alert(
+    "English version is being prepared.\n\n" +
+    "የእንግሊዝኛ ሙሉ ትርጉም በቀጣይ ይጨመራል።"
+  );
+
+}
+
+/* YEAR */
+document.getElementById("year").textContent =
+  new Date().getFullYear();
 
 </script>
 
