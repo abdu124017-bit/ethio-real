@@ -1,0 +1,12 @@
+{
+"id": "/ethio-real/",
+"name": "ETHIO REAL",
+"short_name": "ETHIO REAL",
+"description": "የህንፃ መሳሪያዎች አቅራቢ",
+"start_url": "/ethio-real/",
+"scope": "/ethio-real/",
+"display": "standalone",
+"background_color": "#ffffff",
+"theme_color": "#0d47a1",
+"lang": "am"
+}
