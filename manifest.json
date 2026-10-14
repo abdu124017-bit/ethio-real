@@ -1,12 +1,26 @@
 {
-"id": "/ethio-real/",
-"name": "ETHIO REAL",
-"short_name": "ETHIO REAL",
-"description": "የህንፃ መሳሪያዎች አቅራቢ",
-"start_url": "/ethio-real/",
-"scope": "/ethio-real/",
-"display": "standalone",
-"background_color": "#ffffff",
-"theme_color": "#0d47a1",
-"lang": "am"
+  "id": "/ethio-real/",
+  "name": "ETHIO REAL",
+  "short_name": "ETHIO REAL",
+  "description": "የህንፃ መሳሪያዎች አቅራቢ",
+  "start_url": "/ethio-real/",
+  "scope": "/ethio-real/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d47a1",
+  "lang": "am",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
 }
