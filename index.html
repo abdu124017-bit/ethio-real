@@ -2,276 +2,325 @@
 <html lang="am">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0869b8">
-  <meta name="description" content="ETHIO REAL - የህንፃ መሳሪያዎች በጅምላ ለነጋዴዎች።">
+  <meta name="description" content="ETHIO REAL — የህንፃ መሳሪያዎች በብዛት ለነጋዴዎች። በጥራትና በተመጣጣኝ ዋጋ።">
   <title>ETHIO REAL | የህንፃ መሳሪያዎች</title>
   <link rel="manifest" href="manifest.json">
   <style>
-    :root{--blue:#0869b8;--deep:#073d70;--yellow:#ffdc00;--green:#13a85a;--ink:#172b42;--muted:#66788a;--bg:#f4f7fa;--line:#e4ebf1}
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);font-family:Arial,"Noto Sans Ethiopic",sans-serif;color:var(--ink);padding-bottom:82px}
-    button,input{font:inherit}button{cursor:pointer}
-    .app-header{background:var(--blue);color:#fff;padding:calc(14px + env(safe-area-inset-top)) 18px 24px;border-radius:0 0 24px 24px}
-    .header-line{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .brand{display:flex;align-items:center;gap:10px}
-    .logo{width:46px;height:46px;border-radius:14px;background:var(--yellow);color:var(--deep);display:grid;place-items:center;font-size:20px;font-weight:900;flex-shrink:0}
-    .brand h1{font-size:20px;margin:0;font-weight:900;letter-spacing:.3px}
-    .brand p{margin:3px 0 0;font-size:12px}
-    .lang{border:1px solid #ffffff70;background:#ffffff12;color:#fff;border-radius:12px;padding:9px 10px;font-size:13px}
-    .welcome{text-align:center;margin:25px 0 16px;font-size:23px;line-height:1.3}
-    .search-row{display:flex;gap:9px}
-    .search-row input{min-width:0;flex:1;border:0;border-radius:14px;padding:15px 14px;background:#fff;color:var(--ink);outline:none}
-    .search-row button{border:0;border-radius:14px;padding:0 17px;background:var(--yellow);color:var(--deep);font-weight:800}
-    main{max-width:760px;margin:0 auto;padding:0 16px 28px}
-    .section{margin-top:25px}
-    .section-title{font-size:20px;margin:0 0 5px}
-    .section-sub{font-size:13px;color:var(--muted);margin:0 0 15px;line-height:1.5}
-    .category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
-    .category{border:2px solid transparent;border-radius:17px;background:#fff;padding:9px 8px 12px;text-align:center;box-shadow:0 3px 12px #153a5a0b;min-width:0;color:var(--ink)}
-    .category.active{border-color:var(--blue);background:#edf7ff}
-    .category img,.category .folder-placeholder{width:100%;height:95px;object-fit:cover;border-radius:12px;display:grid;place-items:center;background:#e8f1f7;font-size:38px;margin-bottom:9px}
-    .category strong{display:block;font-size:13px;line-height:1.4}
-    .ad-banner{margin-top:22px;border-radius:17px;padding:17px;background:linear-gradient(120deg,#fff4a5,#ffdf00);display:flex;justify-content:space-between;align-items:center;gap:12px}
-    .ad-banner small{font-size:10px;letter-spacing:.7px;font-weight:900;color:#6d5b00}
-    .ad-banner h3{font-size:17px;margin:5px 0}
-    .ad-banner p{font-size:12px;line-height:1.5;margin:0}
-    .ad-banner a{background:var(--blue);color:#fff;text-decoration:none;font-size:12px;font-weight:800;border-radius:12px;padding:11px 12px;white-space:nowrap}
-    .products-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}
-    .products-head h2{font-size:20px;margin:0}
-    .count{font-size:12px;color:var(--muted)}
-    .product-list{display:flex;flex-direction:column;gap:9px}
-    .product{background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px;display:flex;align-items:center;gap:10px}
-    .product-name{font-size:15px;font-weight:700;line-height:1.4;flex:1;min-width:0}
-    .product-actions{display:flex;align-items:center;gap:7px}
-    .save-btn{border:1px solid var(--line);background:#fff;border-radius:10px;width:38px;height:38px;font-size:19px;color:var(--blue)}
-    .order-btn{border:0;border-radius:10px;background:var(--green);color:#fff;font-weight:800;font-size:12px;padding:11px 10px;white-space:nowrap}
-    .empty{background:#fff;border-radius:14px;padding:22px;text-align:center;color:var(--muted);font-size:14px}
-    .panel{background:#fff;border-radius:17px;padding:18px;margin-top:22px}
-    .panel h2{font-size:20px;margin:0 0 12px}
-    .profile-row{padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.6}
-    .profile-row:last-child{border-bottom:0}
-    .primary-link{display:block;text-align:center;background:var(--green);color:#fff;text-decoration:none;padding:14px;border-radius:12px;font-weight:800;margin-top:14px}
-    .hidden{display:none!important}
-    .bottom-nav{position:fixed;z-index:10;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #d9e1e8;display:grid;grid-template-columns:repeat(5,1fr);padding:7px 3px calc(7px + env(safe-area-inset-bottom));box-shadow:0 -3px 14px #163a5508}
-    .nav-btn{border:0;background:transparent;color:#536575;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:4px 0;font-size:11px;font-weight:700;min-width:0}
-    .nav-icon{font-size:24px;line-height:1.1}
-    .nav-btn.active{color:var(--green)}
-    .nav-btn.active .nav-icon{transform:translateY(-1px)}
-    footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 12px 20px;line-height:1.7}
-    @media(min-width:600px){.app-header{padding-left:max(22px,calc((100% - 720px)/2));padding-right:max(22px,calc((100% - 720px)/2))}.category img,.category .folder-placeholder{height:130px}.category strong{font-size:15px}.product-name{font-size:16px}}
+    :root {
+      --blue: #0869b8;
+      --deep-blue: #073d70;
+      --yellow: #ffcf24;
+      --green: #16854b;
+      --bg: #f3f6fa;
+      --ink: #172536;
+      --muted: #65758a;
+      --white: #fff;
+      --line: #e2e8f0;
+      --shadow: 0 8px 24px rgba(15, 42, 70, .09);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: Arial, "Noto Sans Ethiopic", sans-serif; }
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+    .app-header { background: linear-gradient(135deg, var(--deep-blue), var(--blue)); color: white; padding: 18px 15px 24px; }
+    .header-line { max-width: 1000px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .brand { display: flex; align-items: center; gap: 11px; min-width: 0; }
+    .logo { width: 52px; height: 52px; border-radius: 14px; background: var(--yellow); color: var(--deep-blue); display: grid; place-items: center; font-weight: 900; font-size: 21px; border: 3px solid white; flex-shrink: 0; }
+    .brand h1 { font-size: 21px; line-height: 1.1; margin: 0; letter-spacing: .5px; }
+    .brand p { margin: 5px 0 0; font-size: 12px; opacity: .92; }
+    .lang-btn { border: 1px solid #ffffff80; color: white; background: #ffffff16; padding: 9px 11px; border-radius: 10px; font-weight: 700; }
+    .tagline { max-width: 1000px; margin: 17px auto 0; font-size: 13px; color: #fff4b4; font-weight: 700; }
+    main { max-width: 1000px; margin: auto; padding: 16px 13px 92px; }
+    .welcome { text-align: center; padding: 14px 5px 18px; }
+    .welcome h2 { margin: 0 0 7px; font-size: 22px; color: var(--deep-blue); }
+    .welcome p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+    .search-row { display: flex; gap: 8px; margin: 4px 0 18px; }
+    .search-row input { width: 100%; min-width: 0; border: 1px solid #d6e0eb; background: white; border-radius: 12px; padding: 13px 14px; outline: none; }
+    .search-row input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px #0869b81c; }
+    .section-title { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 22px 2px 12px; }
+    .section-title h2 { margin: 0; font-size: 18px; color: var(--deep-blue); }
+    .section-title span { color: var(--muted); font-size: 12px; }
+    .category-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 11px; }
+    .category-card { padding: 0; border: 2px solid transparent; border-radius: 16px; background: white; overflow: hidden; box-shadow: var(--shadow); text-align: left; color: var(--ink); transition: .15s; }
+    .category-card.active { border-color: var(--yellow); transform: translateY(-2px); }
+    .category-image { height: 118px; position: relative; background: linear-gradient(135deg, #dcecf9, #eef5fb); display: grid; place-items: center; overflow: hidden; }
+    .category-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .image-fallback { font-size: 43px; }
+    .category-label { padding: 11px 9px 12px; font-weight: 800; font-size: 13px; line-height: 1.4; }
+    .category-label small { display: block; font-size: 11px; font-weight: 500; color: var(--muted); margin-top: 4px; }
+    .ad-box { margin: 22px 0; border: 1px dashed #9db4c9; background: linear-gradient(110deg, #eaf4ff, #fff9d8); padding: 15px; border-radius: 14px; text-align: center; }
+    .ad-box strong { color: var(--deep-blue); display: block; margin-bottom: 5px; }
+    .ad-box p { color: var(--muted); margin: 0; font-size: 12px; line-height: 1.6; }
+    .items-section { scroll-margin-top: 12px; }
+    .items-list { display: grid; gap: 9px; }
+    .item-row { background: white; border: 1px solid var(--line); border-radius: 12px; padding: 12px 12px; display: flex; align-items: center; justify-content: space-between; gap: 10px; box-shadow: 0 3px 12px #152c4208; }
+    .item-name { font-size: 14px; font-weight: 700; line-height: 1.5; }
+    .item-sub { color: var(--muted); font-size: 11px; margin-top: 3px; }
+    .order-btn { border: 0; background: var(--green); color: white; padding: 10px 11px; border-radius: 9px; font-size: 12px; font-weight: 800; white-space: nowrap; }
+    .order-btn:active { transform: scale(.98); }
+    .empty { display: none; text-align: center; padding: 24px 10px; color: var(--muted); background: white; border-radius: 12px; }
+    .contact-card { background: var(--deep-blue); color: white; border-radius: 16px; padding: 18px; margin-top: 25px; }
+    .contact-card h2 { margin: 0 0 8px; font-size: 19px; }
+    .contact-card p { margin: 5px 0; font-size: 13px; line-height: 1.7; }
+    .contact-actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 13px; }
+    .contact-actions a { text-decoration: none; border-radius: 9px; padding: 11px 13px; font-size: 13px; font-weight: 800; }
+    .wa-link { color: white; background: var(--green); }
+    .tg-link { color: var(--deep-blue); background: var(--yellow); }
+    footer { text-align: center; padding: 19px 8px 6px; color: var(--muted); font-size: 11px; line-height: 1.8; }
+    .bottom-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 10; display: flex; justify-content: center; gap: 10px; background: #ffffffed; border-top: 1px solid var(--line); padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); backdrop-filter: blur(10px); }
+    .bottom-bar a { flex: 1; max-width: 490px; text-align: center; text-decoration: none; border-radius: 11px; padding: 12px; font-weight: 800; font-size: 13px; }
+    .bottom-order { background: var(--green); color: white; }
+    .bottom-top { background: #e8f0f8; color: var(--deep-blue); }
+    @media (min-width: 700px) {
+      main { padding-left: 20px; padding-right: 20px; }
+      .category-image { height: 180px; }
+      .category-label { font-size: 16px; padding: 14px; }
+      .items-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .welcome h2 { font-size: 27px; }
+    }
+    @media (max-width: 360px) {
+      .category-grid { gap: 6px; }
+      .category-image { height: 88px; }
+      .category-label { padding: 8px 6px; font-size: 11px; }
+      .brand h1 { font-size: 18px; }
+      .logo { width: 45px; height: 45px; }
+      .order-btn { padding: 9px 8px; font-size: 11px; }
+    }
   </style>
 </head>
 <body>
-<header class="app-header" id="home">
-  <div class="header-line">
-    <div class="brand">
-      <div class="logo" aria-label="ETHIO REAL logo">ER</div>
-      <div><h1>ETHIO REAL</h1><p data-am="የህንፃ መሳሪያዎች በጅምላ" data-en="Wholesale Building Materials">የህንፃ መሳሪያዎች በጅምላ</p></div>
+  <header class="app-header" id="top">
+    <div class="header-line">
+      <div class="brand">
+        <div class="logo" aria-label="ETHIO REAL logo">ER</div>
+        <div>
+          <h1>ETHIO REAL</h1>
+          <p data-am="የህንፃ መሳሪያዎች አቅራቢ" data-en="Building Materials Supplier">የህንፃ መሳሪያዎች አቅራቢ</p>
+        </div>
+      </div>
+      <button class="lang-btn" id="langToggle" type="button">English</button>
     </div>
-    <button class="lang" id="languageToggle" type="button">EN / አማ</button>
-  </div>
-  <h2 class="welcome" data-am="ምን እየፈለጉ ነው?" data-en="What are you looking for?">ምን እየፈለጉ ነው?</h2>
-  <div class="search-row">
-    <input id="searchInput" type="search" placeholder="የእቃ ስም ይፈልጉ..." aria-label="Product search">
-    <button id="searchButton" type="button" aria-label="Search">⌕</button>
-  </div>
-</header>
+    <div class="tagline" data-am="በብዛት • በጥራት • በተመጣጣኝ ዋጋ" data-en="WHOLESALE • QUALITY • FAIR PRICE">በብዛት • በጥራት • በተመጣጣኝ ዋጋ</div>
+  </header>
 
-<main>
-  <section class="section" id="homeContent">
-    <h2 class="section-title" data-am="የእቃ ምድቦች" data-en="Product Categories">የእቃ ምድቦች</h2>
-    <p class="section-sub" data-am="ፎልደር ይምረጡ፤ እቃዎችን በስም ይመልከቱ።" data-en="Choose a folder to browse products by name.">ፎልደር ይምረጡ፤ እቃዎችን በስም ይመልከቱ።</p>
-    <div class="category-grid">
-      <button class="category active" data-category="building" type="button">
-        <img src="images/building.jpg" alt="የህንፃ መሳሪያዎች" onerror="this.outerHTML='<div class=&quot;folder-placeholder&quot;>🧱</div>'">
-        <strong data-am="የህንፃ መሳሪያዎች" data-en="Building Materials">የህንፃ መሳሪያዎች</strong>
-      </button>
-      <button class="category" data-category="plumbing" type="button">
-        <img src="images/plumbing.jpg" alt="የቧንቧ እቃዎች" onerror="this.outerHTML='<div class=&quot;folder-placeholder&quot;>🚰</div>'">
-        <strong data-am="የቧንቧ እቃዎች" data-en="Plumbing Supplies">የቧንቧ እቃዎች</strong>
-      </button>
-      <button class="category" data-category="electrical" type="button">
-        <img src="images/electrical.jpg" alt="የኤሌክትሪክ እቃዎች" onerror="this.outerHTML='<div class=&quot;folder-placeholder&quot;>💡</div>'">
-        <strong data-am="የኤሌክትሪክ እቃዎች" data-en="Electrical Supplies">የኤሌክትሪክ እቃዎች</strong>
-      </button>
-    </div>
-    <section class="ad-banner" id="advertisement">
-      <div><small data-am="የማስታወቂያ ቦታ" data-en="ADVERTISEMENT">የማስታወቂያ ቦታ</small><h3 data-am="ETHIO REAL — የጅምላ አቅርቦት" data-en="ETHIO REAL — Wholesale Supply">ETHIO REAL — የጅምላ አቅርቦት</h3><p data-am="በብዛት • በጥራት • በተመጣጣኝ ዋጋ" data-en="Wholesale • Quality • Fair Price">በብዛት • በጥራት • በተመጣጣኝ ዋጋ</p></div>
-      <a href="https://wa.me/251976213646" target="_blank" rel="noopener" data-am="ያግኙን" data-en="Contact">ያግኙን</a>
+  <main>
+    <section class="welcome">
+      <h2 data-am="እንኳን ወደ ETHIO REAL በደህና መጡ" data-en="Welcome to ETHIO REAL">እንኳን ወደ ETHIO REAL በደህና መጡ</h2>
+      <p data-am="ለነጋዴዎች የህንፃ መሳሪያዎችን በብዛት እናቀርባለን። እቃ ለማዘዝ ከእቃው ጎን ያለውን WhatsApp ቁልፍ ይጫኑ።" data-en="Wholesale building materials for merchants. Tap the WhatsApp button beside any item to place an order.">ለነጋዴዎች የህንፃ መሳሪያዎችን በብዛት እናቀርባለን። እቃ ለማዘዝ ከእቃው ጎን ያለውን WhatsApp ቁልፍ ይጫኑ።</p>
     </section>
-  </section>
 
-  <section class="section" id="productSection">
-    <div class="products-head"><h2 id="listTitle">የህንፃ መሳሪያዎች</h2><span class="count" id="productCount"></span></div>
-    <p class="section-sub" data-am="ዋጋ አልተቀመጠም፤ ለዋጋና ትዕዛዝ WhatsApp ይጠቀሙ።" data-en="Prices are not listed. Ask for current prices on WhatsApp.">ዋጋ አልተቀመጠም፤ ለዋጋና ትዕዛዝ WhatsApp ይጠቀሙ።</p>
-    <div class="product-list" id="productGrid"></div>
-  </section>
+    <div class="search-row">
+      <input id="searchInput" type="search" placeholder="እቃ ፈልግ / Search items..." aria-label="Search items">
+    </div>
 
-  <section class="panel hidden" id="savedPanel">
-    <h2 data-am="የተቀመጡ እቃዎች" data-en="Saved Products">የተቀመጡ እቃዎች</h2>
-    <div class="product-list" id="savedGrid"></div>
-  </section>
+    <div class="section-title">
+      <h2 data-am="የእቃ ክፍሎች" data-en="Product Categories">የእቃ ክፍሎች</h2>
+      <span data-am="ክፍል ይምረጡ" data-en="Choose a category">ክፍል ይምረጡ</span>
+    </div>
 
-  <section class="panel hidden" id="orderPanel">
-    <h2 data-am="ትዕዛዝ" data-en="Order">ትዕዛዝ</h2>
-    <p class="section-sub" data-am="ከእቃ ዝርዝሩ ውስጥ የሚፈልጉትን እቃ ይምረጡና በWhatsApp ይዘዙ።" data-en="Choose a product from the list and order through WhatsApp.">ከእቃ ዝርዝሩ ውስጥ የሚፈልጉትን እቃ ይምረጡና በWhatsApp ይዘዙ።</p>
-    <a class="primary-link" href="https://wa.me/251976213646" target="_blank" rel="noopener">💬 WhatsApp Order</a>
-  </section>
+    <!-- የፎቶ ፋይሎችህን በ images ፎልደር ውስጥ አስቀምጥ። ስሞቻቸውን ከ src ጋር አስማማ። -->
+    <section class="category-grid" aria-label="Product categories">
+      <button class="category-card active" data-category="construction" type="button">
+        <div class="category-image">
+          <img src="images/construction.jpg" alt="የህንፃ መሳሪያዎች" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <span class="image-fallback" style="display:none">🏗️</span>
+        </div>
+        <div class="category-label" data-am="የህንፃ መሳሪያዎች" data-en="Construction Materials">የህንፃ መሳሪያዎች<small data-am="Construction" data-en="Building supplies">Construction</small></div>
+      </button>
+      <button class="category-card" data-category="plumbing" type="button">
+        <div class="category-image">
+          <img src="images/plumbing.jpg" alt="የቧንቧ እቃዎች" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <span class="image-fallback" style="display:none">🚰</span>
+        </div>
+        <div class="category-label" data-am="የቧንቧ እቃዎች" data-en="Plumbing Supplies">የቧንቧ እቃዎች<small data-am="Pipes & fittings" data-en="Pipes & fittings">Pipes &amp; fittings</small></div>
+      </button>
+      <button class="category-card" data-category="electrical" type="button">
+        <div class="category-image">
+          <img src="images/electrical.jpg" alt="የኤሌክትሪክ እቃዎች" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <span class="image-fallback" style="display:none">💡</span>
+        </div>
+        <div class="category-label" data-am="የኤሌክትሪክ እቃዎች" data-en="Electrical Supplies">የኤሌክትሪክ እቃዎች<small data-am="Lights & accessories" data-en="Lights & accessories">Lights &amp; accessories</small></div>
+      </button>
+    </section>
 
-  <section class="panel hidden" id="messagesPanel">
-    <h2 data-am="መልዕክቶች" data-en="Messages">መልዕክቶች</h2>
-    <p class="section-sub" data-am="በቀጥታ ለETHIO REAL መልዕክት ይላኩ።" data-en="Send a message directly to ETHIO REAL.">በቀጥታ ለETHIO REAL መልዕክት ይላኩ።</p>
-    <a class="primary-link" href="https://wa.me/251976213646" target="_blank" rel="noopener">💬 WhatsApp Message</a>
-  </section>
+    <aside class="ad-box">
+      <strong data-am="📢 የማስታወቂያ ቦታ" data-en="📢 Advertisement Space">📢 የማስታወቂያ ቦታ</strong>
+      <p data-am="ለንግድ ማስታወቂያ የተዘጋጀ ቦታ። ማስታወቂያ ሲኖር ይዘቱ እዚህ ሊጨመር ይችላል።" data-en="Reserved space for business advertisements. Add your advert content here when ready.">ለንግድ ማስታወቂያ የተዘጋጀ ቦታ። ማስታወቂያ ሲኖር ይዘቱ እዚህ ሊጨመር ይችላል።</p>
+    </aside>
 
-  <section class="panel hidden" id="profilePanel">
-    <h2 data-am="የETHIO REAL መረጃ" data-en="ETHIO REAL Profile">የETHIO REAL መረጃ</h2>
-    <div class="profile-row"><strong data-am="የንግድ ስም፦ " data-en="Business: ">የንግድ ስም፦ </strong>ETHIO REAL</div>
-    <div class="profile-row"><strong data-am="አድራሻ፦ " data-en="Address: ">አድራሻ፦ </strong><span data-am="ሶሳ መርካቶ፣ አዲስ አበባ" data-en="Sosa Merkato, Addis Ababa">ሶሳ መርካቶ፣ አዲስ አበባ</span></div>
-    <div class="profile-row"><strong data-am="ስልክ፦ " data-en="Phone: ">ስልክ፦ </strong><a href="tel:+251976213646">+251 976 213 646</a></div>
-    <div class="profile-row" data-am="በብዛት • በጥራት • በተመጣጣኝ ዋጋ" data-en="Wholesale • Quality • Fair Price">በብዛት • በጥራት • በተመጣጣኝ ዋጋ</div>
-    <a class="primary-link" href="https://wa.me/251976213646" target="_blank" rel="noopener">WhatsApp: +251 976 213 646</a>
-  </section>
-</main>
+    <section class="items-section" id="itemsSection">
+      <div class="section-title">
+        <h2 id="itemsHeading">የህንፃ መሳሪያዎች</h2>
+        <span id="itemsCount"></span>
+      </div>
+      <div class="items-list" id="itemsList"></div>
+      <div class="empty" id="emptyMessage">የፈለጉት እቃ አልተገኘም። / No items found.</div>
+    </section>
 
-<footer>ETHIO REAL · <span data-am="የጅምላ አቅርቦት ለነጋዴዎች" data-en="Wholesale supply for merchants">የጅምላ አቅርቦት ለነጋዴዎች</span></footer>
+    <section class="contact-card">
+      <h2 data-am="ETHIO REAL — ያግኙን" data-en="Contact ETHIO REAL">ETHIO REAL — ያግኙን</h2>
+      <p data-am="📍 አድራሻ፦ ሶሳ መርካቶ፣ አዲስ አበባ" data-en="📍 Address: Sosa Merkato, Addis Ababa">📍 አድራሻ፦ ሶሳ መርካቶ፣ አዲስ አበባ</p>
+      <p data-am="📦 ለነጋዴዎች በብዛት ብቻ" data-en="📦 Wholesale for merchants">📦 ለነጋዴዎች በብዛት ብቻ</p>
+      <div class="contact-actions">
+        <a class="wa-link" href="https://wa.me/251976213646" target="_blank" rel="noopener">WhatsApp: 0976 213 646</a>
+        <a class="tg-link" href="https://t.me/ethio_real1" target="_blank" rel="noopener">Telegram Channel</a>
+      </div>
+    </section>
 
-<nav class="bottom-nav" aria-label="App navigation">
-  <button class="nav-btn active" data-page="home" type="button"><span class="nav-icon">⌂</span><span data-am="መነሻ" data-en="Home">መነሻ</span></button>
-  <button class="nav-btn" data-page="saved" type="button"><span class="nav-icon">☆</span><span data-am="የተቀመጡ" data-en="Saved">የተቀመጡ</span></button>
-  <button class="nav-btn" data-page="order" type="button"><span class="nav-icon">＋</span><span data-am="ትዕዛዝ" data-en="Order">ትዕዛዝ</span></button>
-  <button class="nav-btn" data-page="messages" type="button"><span class="nav-icon">▤</span><span data-am="መልዕክቶች" data-en="Messages">መልዕክቶች</span></button>
-  <button class="nav-btn" data-page="profile" type="button"><span class="nav-icon">♙</span><span data-am="መረጃ" data-en="Profile">መረጃ</span></button>
-</nav>
+    <footer>
+      <strong>ETHIO REAL</strong><br>
+      <span data-am="በብዛት • በጥራት • በተመጣጣኝ ዋጋ" data-en="Wholesale • Quality • Fair Price">በብዛት • በጥራት • በተመጣጣኝ ዋጋ</span><br>
+      © <span id="year"></span> ETHIO REAL. All rights reserved.
+    </footer>
+  </main>
 
-<script>
-  const WHATSAPP_NUMBER = "251976213646";
-  const products = [
-    {id:"nails",category:"building",nameAm:"ኮንክሪት ሚስማር",nameEn:"Concrete Nails"},
-    {id:"tape",category:"building",nameAm:"ሜዠሪንግ ቴፕ",nameEn:"Measuring Tape"},
-    {id:"mastic",category:"building",nameAm:"ማስቲክ",nameEn:"Mastic"},
-    {id:"brush",category:"building",nameAm:"ብሩሽ",nameEn:"Brushes"},
-    {id:"union",category:"plumbing",nameAm:"ዩኒየን",nameEn:"Union"},
-    {id:"pipe",category:"plumbing",nameAm:"HDPE ፓይፕ",nameEn:"HDPE Pipe"},
-    {id:"elbow",category:"plumbing",nameAm:"PPR ኤልቦ",nameEn:"PPR Elbow"},
-    {id:"teflon",category:"plumbing",nameAm:"ቴፍሎን",nameEn:"Teflon Tape"},
-    {id:"cross",category:"plumbing",nameAm:"Cross T",nameEn:"Cross T"},
-    {id:"lights",category:"electrical",nameAm:"መብራቶች",nameEn:"Lights"},
-    {id:"sockets",category:"electrical",nameAm:"ሶኬትና ስዊች",nameEn:"Sockets & Switches"},
-    {id:"wire",category:"electrical",nameAm:"ሽቦና ኬብል",nameEn:"Wires & Cables"},
-    {id:"flood",category:"electrical",nameAm:"Flood Light",nameEn:"Flood Lights"},
-    {id:"pendant",category:"electrical",nameAm:"Pendant መብራት",nameEn:"Pendant Lights"}
-  ];
-  const categoryNames = {
-    building:{am:"የህንፃ መሳሪያዎች",en:"Building Materials"},
-    plumbing:{am:"የቧንቧ እቃዎች",en:"Plumbing Supplies"},
-    electrical:{am:"የኤሌክትሪክ እቃዎች",en:"Electrical Supplies"}
-  };
-  let currentCategory = "building";
-  let language = "am";
-  let currentPage = "home";
-  let saved = [];
-  try { saved = JSON.parse(localStorage.getItem("ethioRealSaved") || "[]"); } catch(e) { saved = []; }
-  const grid = document.getElementById("productGrid");
-  const savedGrid = document.getElementById("savedGrid");
-  const searchInput = document.getElementById("searchInput");
+  <nav class="bottom-bar" aria-label="Quick actions">
+    <a class="bottom-order" href="https://wa.me/251976213646?text=Selam%20ETHIO%20REAL%2C%20I%20would%20like%20to%20place%20a%20wholesale%20order." target="_blank" rel="noopener" data-am="📲 ትዕዛዝ በWhatsApp" data-en="📲 Order on WhatsApp">📲 ትዕዛዝ በWhatsApp</a>
+    <a class="bottom-top" href="#top" data-am="⬆️ ወደ ላይ" data-en="⬆️ Top">⬆️ ወደ ላይ</a>
+  </nav>
 
-  function productRow(p) {
-    const row = document.createElement("article");
-    row.className = "product";
-    const name = language === "am" ? p.nameAm : p.nameEn;
-    const isSaved = saved.includes(p.id);
-    row.innerHTML = `<div class="product-name">${name}</div>
-      <div class="product-actions">
-        <button class="save-btn" type="button" data-save="${p.id}" aria-label="Save product">${isSaved ? "★" : "☆"}</button>
-        <button class="order-btn" type="button" data-order="${p.id}">WhatsApp</button>
-      </div>`;
-    return row;
-  }
-  function filteredProducts(category, query) {
-    const q = query.trim().toLocaleLowerCase();
-    return products.filter(p => (category === "all" || p.category === category) &&
-      (!q || p.nameAm.toLocaleLowerCase().includes(q) || p.nameEn.toLocaleLowerCase().includes(q)));
-  }
-  function renderProducts() {
-    const list = filteredProducts(currentCategory, searchInput.value);
-    grid.innerHTML = "";
-    list.forEach(p => grid.appendChild(productRow(p)));
-    document.getElementById("productCount").textContent = `${list.length}`;
-    document.getElementById("listTitle").textContent = searchInput.value.trim()
-      ? (language === "am" ? "የፍለጋ ውጤት" : "Search Results")
-      : categoryNames[currentCategory][language];
-    if (!list.length) grid.innerHTML = `<div class="empty">${language === "am" ? "የተፈለገው እቃ አልተገኘም።" : "No products found."}</div>`;
-    renderSaved();
-  }
-  function renderSaved() {
-    savedGrid.innerHTML = "";
-    const list = products.filter(p => saved.includes(p.id));
-    list.forEach(p => savedGrid.appendChild(productRow(p)));
-    if (!list.length) savedGrid.innerHTML = `<div class="empty">${language === "am" ? "ገና የተቀመጠ እቃ የለም። ከእቃው ጎን ☆ ይጫኑ።" : "No saved products yet. Tap ☆ beside a product."}</div>`;
-  }
-  function sendOrder(id) {
-    const p = products.find(item => item.id === id);
-    const name = language === "am" ? p.nameAm : p.nameEn;
-    const msg = language === "am"
-      ? `ሰላም ETHIO REAL፣ ይህን እቃ ማዘዝ እፈልጋለሁ።\nእቃ፦ ${name}\nእባክዎ የአሁኑን ዋጋና የጅምላ መረጃ ይላኩልኝ።`
-      : `Hello ETHIO REAL, I would like to order: ${name}. Please send the current price and wholesale details.`;
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
-  }
-  function showPage(page) {
-    currentPage = page;
-    document.getElementById("homeContent").classList.toggle("hidden", page !== "home");
-    document.getElementById("productSection").classList.toggle("hidden", page !== "home" && page !== "saved");
-    document.getElementById("savedPanel").classList.toggle("hidden", page !== "saved");
-    document.getElementById("orderPanel").classList.toggle("hidden", page !== "order");
-    document.getElementById("messagesPanel").classList.toggle("hidden", page !== "messages");
-    document.getElementById("profilePanel").classList.toggle("hidden", page !== "profile");
-    document.querySelectorAll(".nav-btn").forEach(b => b.classList.toggle("active", b.dataset.page === page));
-    if(page === "saved") { document.getElementById("productSection").classList.add("hidden"); renderSaved(); }
-    if(page === "home") { document.getElementById("productSection").classList.remove("hidden"); }
-    window.scrollTo({top:0,behavior:"smooth"});
-  }
-  document.querySelectorAll(".category").forEach(btn => btn.addEventListener("click", () => {
-    currentCategory = btn.dataset.category;
-    searchInput.value = "";
-    document.querySelectorAll(".category").forEach(b => b.classList.toggle("active", b === btn));
-    renderProducts();
-    document.getElementById("productSection").scrollIntoView({behavior:"smooth",block:"start"});
-  }));
-  document.getElementById("searchButton").addEventListener("click", () => {
-    currentCategory = "all";
-    document.querySelectorAll(".category").forEach(b => b.classList.remove("active"));
-    renderProducts();
-    document.getElementById("productSection").scrollIntoView({behavior:"smooth",block:"start"});
-  });
-  searchInput.addEventListener("input", renderProducts);
-  searchInput.addEventListener("keydown", e => { if(e.key === "Enter") document.getElementById("searchButton").click(); });
-  document.querySelector(".bottom-nav").addEventListener("click", e => {
-    const btn = e.target.closest("[data-page]");
-    if(btn) showPage(btn.dataset.page);
-  });
-  document.addEventListener("click", e => {
-    const order = e.target.closest("[data-order]");
-    if(order) sendOrder(order.dataset.order);
-    const saveBtn = e.target.closest("[data-save]");
-    if(saveBtn) {
-      const id = saveBtn.dataset.save;
-      saved = saved.includes(id) ? saved.filter(x => x !== id) : [...saved, id];
-      localStorage.setItem("ethioRealSaved", JSON.stringify(saved));
-      renderProducts();
-      if(currentPage === "saved") renderSaved();
+  <script>
+    // WhatsApp order contact: Ethiopia country code +251, without the leading zero.
+    const WHATSAPP_NUMBER = "251976213646";
+
+    const catalog = {
+      construction: {
+        am: "የህንፃ መሳሪያዎች", en: "Construction Materials",
+        items: [
+          ["የኮንክሪት ሚስማር (Concrete Nails)", "Concrete Nails"],
+          ["የኪስ ሚስማር (Pocket Nails)", "Pocket Nails"],
+          ["ቴፕ / ሜዠሪንግ ቴፕ", "Measuring Tape"],
+          ["ማስቲክ (Mastic)", "Mastic"],
+          ["ቀለም ብሩሽ (Paint Brush)", "Paint Brush"],
+          ["የብረት ብሩሽ (Wire Brush)", "Wire Brush"],
+          ["የመቁረጫ ዲስክ (Cutting Disc)", "Cutting Disc"],
+          ["የመፍጫ ዲስክ (Grinding Disc)", "Grinding Disc"],
+          ["የእጅ መሳሪያዎች (Hand Tools)", "Hand Tools"],
+          ["ሌሎች የህንፃ መሳሪያዎች", "Other Construction Materials"]
+        ]
+      },
+      plumbing: {
+        am: "የቧንቧ እቃዎች", en: "Plumbing Supplies",
+        items: [
+          ["Union", "Union"],
+          ["Teflon", "Teflon Tape"],
+          ["Cross T", "Cross T Fitting"],
+          ["PPR Elbow", "PPR Elbow"],
+          ["HDPE Elbow", "HDPE Elbow"],
+          ["HDPE Pipe", "HDPE Pipe"],
+          ["GS Pipe", "GS Pipe"],
+          ["Reducer", "Reducer"],
+          ["PPR Pipe & Fittings", "PPR Pipe and Fittings"],
+          ["የቧንቧ ቫልቭ (Valve)", "Plumbing Valve"],
+          ["ሌሎች የቧንቧ እቃዎች", "Other Plumbing Supplies"]
+        ]
+      },
+      electrical: {
+        am: "የኤሌክትሪክ እቃዎች", en: "Electrical Supplies",
+        items: [
+          ["ፕሮፋይል ላይት (Profile Light)", "Profile Light"],
+          ["ሻዶ ላይት (Shadow Light)", "Shadow Light"],
+          ["ሶኬትና ስዊች (Sockets & Switches)", "Sockets and Switches"],
+          ["LED መብራቶች", "LED Lights"],
+          ["ማግኔቲክ ላይትና አክሰሰሪ", "Magnetic Lights and Accessories"],
+          ["የኤሌክትሪክ ገመድ (Wires & Cables)", "Electrical Wires and Cables"],
+          ["ፍሎድ ላይት (Flood Light)", "Flood Light"],
+          ["ፔንዳንት ላይት (Pendant Light)", "Pendant Light"],
+          ["የመብራት መያዣ (Lamp Holder)", "Lamp Holder"],
+          ["MCB / ማግኔቲክ", "MCB / Circuit Breaker"],
+          ["ሌሎች የኤሌክትሪክ እቃዎች", "Other Electrical Supplies"]
+        ]
+      }
+    };
+
+    let activeCategory = "construction";
+    let language = "am";
+    const itemsList = document.getElementById("itemsList");
+    const searchInput = document.getElementById("searchInput");
+
+    function makeOrderLink(itemAm, itemEn) {
+      const itemName = language === "am" ? itemAm : itemEn;
+      const message = language === "am"
+        ? `ሰላም ETHIO REAL፣ ይህን እቃ በብዛት ማዘዝ እፈልጋለሁ፦ ${itemName}`
+        : `Hello ETHIO REAL, I would like to order this item wholesale: ${itemName}`;
+      return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
     }
-  });
-  document.getElementById("languageToggle").addEventListener("click", () => {
-    language = language === "am" ? "en" : "am";
-    document.documentElement.lang = language;
-    document.querySelectorAll("[data-am][data-en]").forEach(el => el.textContent = el.dataset[language]);
-    searchInput.placeholder = language === "am" ? "የእቃ ስም ይፈልጉ..." : "Search products...";
-    searchInput.setAttribute("aria-label", language === "am" ? "የእቃ ፍለጋ" : "Product search");
-    renderProducts();
-  });
-  renderProducts();
-</script>
+
+    function renderItems() {
+      const category = catalog[activeCategory];
+      const query = searchInput.value.trim().toLocaleLowerCase();
+      document.getElementById("itemsHeading").textContent = category[language];
+      itemsList.innerHTML = "";
+      let visibleCount = 0;
+
+      Object.entries(catalog).forEach(([catKey, cat]) => {
+        if (catKey !== activeCategory && query === "") return;
+        cat.items.forEach(([am, en]) => {
+          const haystack = `${am} ${en} ${cat.am} ${cat.en}`.toLocaleLowerCase();
+          if (query && !haystack.includes(query)) return;
+          if (!query && catKey !== activeCategory) return;
+          visibleCount++;
+          const row = document.createElement("article");
+          row.className = "item-row";
+          const info = document.createElement("div");
+          const name = document.createElement("div");
+          name.className = "item-name";
+          name.textContent = language === "am" ? am : en;
+          const sub = document.createElement("div");
+          sub.className = "item-sub";
+          sub.textContent = query ? cat[language] : (language === "am" ? "በብዛት ለማዘዝ" : "Available for wholesale order");
+          info.append(name, sub);
+
+          const order = document.createElement("button");
+          order.className = "order-btn";
+          order.type = "button";
+          order.textContent = language === "am" ? "WhatsApp አዝዝ" : "Order on WhatsApp";
+          order.addEventListener("click", () => {
+            window.open(makeOrderLink(am, en), "_blank", "noopener");
+          });
+          row.append(info, order);
+          itemsList.appendChild(row);
+        });
+      });
+
+      document.getElementById("itemsCount").textContent = language === "am" ? `${visibleCount} እቃዎች` : `${visibleCount} items`;
+      document.getElementById("emptyMessage").style.display = visibleCount ? "none" : "block";
+    }
+
+    document.querySelectorAll(".category-card").forEach(card => {
+      card.addEventListener("click", () => {
+        activeCategory = card.dataset.category;
+        document.querySelectorAll(".category-card").forEach(c => c.classList.toggle("active", c === card));
+        searchInput.value = "";
+        renderItems();
+        document.getElementById("itemsSection").scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+
+    searchInput.addEventListener("input", renderItems);
+
+    document.getElementById("langToggle").addEventListener("click", () => {
+      language = language === "am" ? "en" : "am";
+      document.documentElement.lang = language;
+      document.querySelectorAll("[data-am][data-en]").forEach(el => {
+        el.textContent = el.dataset[language];
+      });
+      document.getElementById("langToggle").textContent = language === "am" ? "English" : "አማርኛ";
+      searchInput.placeholder = language === "am" ? "እቃ ፈልግ / Search items..." : "Search items...";
+      renderItems();
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    renderItems();
+
+    if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./service-worker.js").catch(() => {});
+      });
+    }
+  </script>
 </body>
 </html>
