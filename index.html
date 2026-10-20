@@ -4,621 +4,166 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0d47a1">
-<meta name="description" content="ETHIO REAL - የህንፃ መሳሪያዎች በብዛት አቅራቢ">
+<meta name="description" content="ETHIO REAL - Wholesale building materials supplier in Addis Ababa, Ethiopia.">
 <link rel="manifest" href="manifest.json">
-<title>ETHIO REAL | የህንፃ መሳሪያዎች</title>
-
+<title>ETHIO REAL | Building Materials</title>
 <style>
-:root {
-  --blue: #0d47a1;
-  --yellow: #ffca28;
-  --green: #138044;
-  --light: #f4f7fb;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: var(--light);
-  color: #222;
-}
-header {
-  background: var(--blue);
-  color: white;
-  text-align: center;
-  padding: 22px 12px;
-}
-header h1 {
-  margin: 0;
-  color: var(--yellow);
-  font-size: 30px;
-}
-header p { margin: 8px 0 0; }
-button, input, select { font: inherit; }
-button { cursor: pointer; }
-.topbar {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
-  padding: 12px;
-  background: white;
-}
-.topbar button {
-  border: 0;
-  padding: 10px 14px;
-  border-radius: 8px;
-  background: var(--blue);
-  color: white;
-}
-.container {
-  width: min(100% - 24px, 1000px);
-  margin: 16px auto;
-}
-.ad {
-  background: #fff8d8;
-  border: 2px solid var(--yellow);
-  border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 16px;
-}
-.ad h2 { color: var(--blue); margin-top: 0; }
-.ad a {
-  display: inline-block;
-  margin: 5px 5px 0 0;
-  padding: 9px 12px;
-  background: var(--green);
-  color: white;
-  text-decoration: none;
-  border-radius: 7px;
-}
-.searchbox {
-  width: 100%;
-  padding: 13px;
-  border: 1px solid #bbb;
-  border-radius: 9px;
-  margin-bottom: 12px;
-}
-.categories {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  margin-bottom: 16px;
-}
-.category {
-  padding: 13px 5px;
-  border: 2px solid var(--blue);
-  background: white;
-  color: var(--blue);
-  border-radius: 9px;
-  font-weight: bold;
-}
-.category.active {
-  background: var(--blue);
-  color: white;
-}
-.info {
-  background: white;
-  padding: 12px;
-  border-radius: 8px;
-  margin-bottom: 12px;
-}
-.product {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 9px;
-  background: white;
-  border-bottom: 1px solid #e4e4e4;
-}
-.product input[type="checkbox"] {
-  width: 21px;
-  height: 21px;
-  accent-color: var(--green);
-  flex-shrink: 0;
-}
-.product-name {
-  flex: 1;
-  overflow-wrap: anywhere;
-}
-.quantity {
-  width: 66px;
-  padding: 8px 4px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-.actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 16px 0;
-}
-.actions button {
-  border: 0;
-  padding: 12px;
-  border-radius: 8px;
-  color: white;
-}
-.send { background: var(--green); flex: 1; }
-.selectall { background: var(--blue); }
-.clear { background: #666; }
-footer {
-  text-align: center;
-  padding: 24px 12px;
-  background: var(--blue);
-  color: white;
-  margin-top: 25px;
-}
-footer a { color: var(--yellow); }
-.hidden { display: none; }
-@media (max-width: 480px) {
-  header h1 { font-size: 26px; }
-  .categories { gap: 5px; }
-  .category { font-size: 13px; padding: 11px 3px; }
-  .product { gap: 7px; }
-}
+:root{--blue:#0d47a1;--yellow:#ffca28;--green:#138044;--light:#f4f7fb}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:var(--light);color:#222}
+header{background:var(--blue);color:#fff;text-align:center;padding:20px 12px}
+header h1{margin:0;color:var(--yellow);font-size:29px}
+header p{margin:7px 0 0}
+button,input{font:inherit}
+button{cursor:pointer}
+.topbar{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:10px;background:#fff}
+.topbar button{border:0;padding:10px 14px;border-radius:8px;background:var(--blue);color:#fff}
+.container{width:min(100% - 22px,1000px);margin:14px auto}
+.ad{background:#fff8d8;border:2px solid var(--yellow);border-radius:12px;padding:12px;margin-bottom:14px}
+.ad h2{color:var(--blue);margin:0 0 9px;font-size:20px}
+.carousel{position:relative;overflow:hidden;border-radius:9px;background:#e8edf4}
+.carousel img{display:block;width:100%;height:190px;object-fit:contain}
+.dots{display:flex;justify-content:center;gap:7px;margin:7px 0}
+.dot{width:8px;height:8px;border-radius:50%;background:#b5bdc9}
+.dot.active{background:var(--blue)}
+.ad p{margin:7px 0}
+.ad-links{display:flex;flex-wrap:wrap;gap:7px;margin-top:9px}
+.ad a{display:inline-block;padding:9px 11px;background:var(--green);color:#fff;text-decoration:none;border-radius:7px;font-size:14px}
+.searchbox{width:100%;padding:12px;border:1px solid #bbb;border-radius:9px;margin-bottom:11px}
+.categories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-bottom:14px}
+.category{padding:12px 4px;border:2px solid var(--blue);background:#fff;color:var(--blue);border-radius:9px;font-weight:bold;font-size:14px}
+.category.active{background:var(--blue);color:#fff}
+.info{background:#fff;padding:12px;border-radius:8px;margin-bottom:11px}
+.product{display:flex;align-items:center;gap:9px;padding:11px 8px;background:#fff;border-bottom:1px solid #e4e4e4}
+.product input[type=checkbox]{width:21px;height:21px;accent-color:var(--green);flex-shrink:0}
+.product-name{flex:1;overflow-wrap:anywhere}
+.quantity{width:68px;padding:8px 4px;border:1px solid #ccc;border-radius:6px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.actions button{border:0;padding:11px;border-radius:8px;color:#fff}
+.send{background:var(--green);flex:1}.selectall{background:var(--blue)}.clear{background:#666}
+footer{text-align:center;padding:22px 12px;background:var(--blue);color:#fff;margin-top:22px}
+footer a{color:var(--yellow)}
+@media(max-width:480px){header h1{font-size:25px}.categories{gap:5px}.category{font-size:12px;padding:10px 2px}.carousel img{height:145px}.product{gap:7px}}
 </style>
 </head>
-
 <body>
-
 <header>
-  <h1>ETHIO REAL</h1>
-  <p id="slogan">በብዛት • በጥራት • በተመጣጣኝ ዋጋ</p>
-  <p>📍 ሶሳ መርካቶ፣ አዲስ አበባ</p>
+<h1>ETHIO REAL</h1>
+<p id="slogan">በብዛት • በጥራት • በተመጣጣኝ ዋጋ</p>
+<p id="address">📍 ሶሳ መርካቶ፣ አዲስ አበባ</p>
 </header>
-
 <div class="topbar">
-  <button onclick="toggleLanguage()" id="languageBtn">English</button>
-  <button onclick="window.location.href='https://t.me/ethio_real1/41'">
-    Telegram
-  </button>
+<button id="languageBtn" type="button">English</button>
+<button id="telegramBtn" type="button">Telegram</button>
 </div>
-
 <main class="container">
-
-  <section class="ad">
-    <h2 id="adTitle">📢 አዳዲስ የገቡ እቃዎች</h2>
-    <p>ጋንች = ትልቁ / ትንሹ</p>
-    <p>ስክ ባለ 140</p>
-    <p>ስክ ባለ 110</p>
-    <p>አግዳሚ ባለ 10</p>
-    <p>አግዳሚ ባለ 8</p>
-    <p>ሜትር ባለ 5 የጎማ</p>
-    <p>ሜትር ባለ 3 የጎማ</p>
-    <p>ሜትር የብርጭቆ 3 / 5</p>
-    <a href="tel:+251976213646">📞 0976 21 36 46</a>
-    <a href="https://t.me/ethio_real1/41">ዝርዝሩን በTelegram ይመልከቱ</a>
-  </section>
-
-  <input
-    type="search"
-    class="searchbox"
-    id="search"
-    placeholder="🔍 የእቃ ስም ይፈልጉ..."
-    oninput="renderProducts()"
-  >
-
-  <div class="categories">
-    <button class="category active" data-cat="building"
-      onclick="changeCategory('building',this)">🏗️ የህንፃ እቃዎች</button>
-    <button class="category" data-cat="plumbing"
-      onclick="changeCategory('plumbing',this)">🚰 የቧንቧ እቃዎች</button>
-    <button class="category" data-cat="electric"
-      onclick="changeCategory('electric',this)">💡 የኤሌክትሪክ እቃዎች</button>
-  </div>
-
-  <div class="info" id="listTitle">
-    የሚፈልጉትን እቃ ይምረጡ፤ ብዛቱንም ያስገቡ።
-  </div>
-
-  <div id="productList"></div>
-
-  <div class="actions">
-    <button class="selectall" onclick="selectVisible(true)">
-      የሚታዩትን ሁሉ ምረጥ
-    </button>
-    <button class="clear" onclick="clearSelection()">ምርጫ አጽዳ</button>
-    <button class="send" onclick="sendOrder()">
-      📲 ትዕዛዝ በWhatsApp ላክ
-    </button>
-  </div>
-
-  <div class="info" id="selectedCount">የተመረጡ እቃዎች: 0</div>
+<section class="ad" aria-label="Advertisement">
+<h2 id="adTitle">📢 አዳዲስ የገቡ እቃዎች</h2>
+<div class="carousel">
+<img id="adImage" src="ad-nails-1.jpg" alt="ETHIO REAL building materials advertisement">
+</div>
+<div class="dots" aria-hidden="true"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+<p id="adLine1"><strong>ETHIO REAL — የህንፃ መሳሪያዎች በብዛት</strong></p>
+<p id="adLine2">ጋንች • ስክ ባለ 140 / 110 • አግዳሚ ባለ 8 / 10</p>
+<div class="ad-links">
+<a id="orderAd" href="https://wa.me/251976213646">📲 በWhatsApp ይዘዙ</a>
+<a id="callAd" href="tel:+251976213646">📞 0976 21 36 46</a>
+<a id="telegramAd" href="https://t.me/ethio_real1/41">Telegram</a>
+</div>
+</section>
+<input type="search" class="searchbox" id="search" placeholder="🔍 የእቃ ስም ይፈልጉ..." autocomplete="off">
+<div class="categories">
+<button class="category active" data-cat="building" type="button">🏗️ የህንፃ እቃዎች</button>
+<button class="category" data-cat="plumbing" type="button">🚰 የቧንቧ እቃዎች</button>
+<button class="category" data-cat="electric" type="button">💡 የኤሌክትሪክ እቃዎች</button>
+</div>
+<div class="info" id="listTitle">የሚፈልጉትን እቃ ይምረጡ፤ ብዛቱንም ያስገቡ።</div>
+<div id="productList"></div>
+<div class="actions">
+<button class="selectall" id="selectAll" type="button">የሚታዩትን ሁሉ ምረጥ</button>
+<button class="clear" id="clear" type="button">ምርጫ አጽዳ</button>
+<button class="send" id="send" type="button">📲 ትዕዛዝ በWhatsApp ላክ</button>
+</div>
+<div class="info" id="selectedCount">የተመረጡ እቃዎች: 0</div>
 </main>
-
 <footer>
-  <h3>ETHIO REAL</h3>
-  <p>የህንፃ መሳሪያዎች በብዛት አቅራቢ</p>
-  <p>📞 <a href="tel:+251976213646">+251 976 213 646</a></p>
-  <p>📍 ሶሳ መርካቶ፣ አዲስ አበባ፣ ኢትዮጵያ</p>
+<h3>ETHIO REAL</h3>
+<p id="footerDesc">የህንፃ መሳሪያዎች በብዛት አቅራቢ</p>
+<p>📞 <a href="tel:+251976213646">+251 976 213 646</a></p>
+<p id="footerAddress">📍 ሶሳ መርካቶ፣ አዲስ አበባ፣ ኢትዮጵያ</p>
 </footer>
-
 <script>
-const products = {
-building: [
-"ብሩሽ መቶ አለቃ 1ኛ",
-"ብሩሽ መቶ አለቃ 2ኛ",
-"ብሩሽ 3/14 ኖርማል",
-"ብሩሽ 4 ቁጥር",
-"ብሩሽ 3 ቁጥር",
-"ብሩሽ 2 ቁጥር",
-"ብሩሽ 1 ቁጥር",
-"የስዕል ብሩሽ",
-"ብረት ብሩሽ",
-"የግቢ መቶ አለቃ ቁልፍ",
-"የግቢ ኦርላንዶ",
-"የግቢ ICSA",
-"እጅታ ኮብራ",
-"እጅታ ATT",
-"እጅታ ALTRA",
-"ኪያ ቡሽ ባለ 1",
-"ኪያ ቡሽ ባለ 2",
-"ተንጠልጣይ ቁልፍ 70mm",
-"ተንጠልጣይ ቁልፍ 60mm",
-"ተንጠልጣይ ቁልፍ 50mm",
-"ተንጠልጣይ ቁልፍ 40mm",
-"የካዝና ቁልፍ",
-"ሴት ቁልፍ",
-"ትሬይ ሳይክል ቁልፍ 266",
-"ትሬይ ሳይክል ቁልፍ 265",
-"ትሬይ ሳይክል ቁልፍ 264",
-"ትሬይ ሳይክል ቁልፍ 263",
-"አልሙኒየም እጀታ ጂንታይል",
-"አልሙኒየም እጀታ ዩሂት",
-"አልሙኒየም ሲሊንደር ጂንታይል",
-"አልሙኒየም ሲሊንደር ዩሂት",
-"ሲሊንደር መቶ አለቃ",
-"ሲሊንደር ኮብራ",
-"ሲሊንደር ሚላኖ",
-"ሲሊንደር ICSA",
-"ቪቴ 1.5",
-"ቪቴ 2.5",
-"ቪቴ 3",
-"ቪቴ 3.5",
-"ቪቴ 4",
-"ቪቴ 5",
-"ቪቴ ወርቃማ 6",
-"ቪቴ ወርቃማ 8",
-"ቪቴ ወርቃማ 10",
-"ቪቴ 8×1",
-"ቪቴ 10×1",
-"ቪቴ ሰልፎ 60",
-"ቪቴ ሰልፎ 50",
-"ቪቴ ሰልፎ 40",
-"ቪቴ ሰልፎ 30",
-"ቪቴ ሰልፎ 19",
-"መፍቻዎች",
-"ቻክ ቤላ 4 ኢንች",
-"ቻክ ቤላ 3 ኢንች",
-"ፊሸር 6",
-"ፊሸር 8",
-"ፊሸር 10",
-"ስዉር የእንጨት",
-"ሮማ የብረት ስውር",
-"ጓንት 200g",
-"ጓንት 300g",
-"ጓንት ከለር",
-"ጓንት ቆዳ",
-"ፕስቲሽ ክሊር",
-"ፕስቲሽ ጥቁር",
-"ፕስቲሽ ነጭ",
-"ብርጭቆ ወርቀት 120×60×80",
-"መፋስ ትንሹ",
-"መፋስ ትልቁ",
-"ጭራ 4 ኢንች",
-"ጭራ 6 ኢንች",
-"የኋላ 2 ኢንች",
-"የኋላ 3 ኢንች",
-"የኋላ 4 ኢንች",
-"ሰንሰለት 50",
-"ሰንሰለት 40",
-"ሰንሰለት 45",
-"ሰንሰለት 35",
-"ሰንሰለት 30",
-"ሰንሰለት 25",
-"ስቶኮ 4kg",
-"ስቶኮ 6kg",
-"ጀት ቀለም ነጭ",
-"ጀት ቀለም ነጭ ጋሎን",
-"CM 1kg",
-"CM 1/2",
-"CM 1/4 300g",
-"ሜትር 3",
-"ሜትር 5",
-"ሜትር 7.5",
-"ፒንሳ",
-"ጉጠት",
-"አብሮ ፕላስተር",
-"ፕላስተር መቶ አለቃ",
-"አግዳሚ 8 ኢንች",
-"አግዳሚ 10 ኢንች",
-"ከርኬቶ",
-"ዲስክ 180",
-"ዲስክ 230",
-"ዲስክ 5 ኢንች",
-"ዲስክ 350",
-"ኮንክሪት ሚስማር 4",
-"ኮንክሪት ሚስማር 6",
-"ኮንክሪት ሚስማር 8",
-"ኮንክሪት ሚስማር 10",
-"ስክ 110",
-"ስክ 140",
-"ድብልብል",
-"ኩርንችት",
-"ከተር",
-"ስፕሬ",
-"ቶርኖ ትንሹ",
-"ቶርኖ ትልቁ",
-"መቀመሚያ",
-"ቀለም 1/2",
-"ቀለም 1/4",
-"ማሲንቆ",
-"ድግን",
-"ምላጭ መቶ",
-"ምላጭ አዞ",
-"ምላጭ አሳ",
-"ስጌቶ ምላጭ",
-"ኤሌክትሮድ 2.5",
-"ማንኪያ 20 ኢንች",
-"ማንኪያ 22 ኢንች",
-"ቆብ ሚስማር",
-"ዶማ",
-"ሽቦ 1mm",
-"ሽቦ 1.5mm",
-"ሽቦ 2.5mm",
-"አካፋ ያማቶ",
-"አካፋ ጎልድ",
-"አካፋ ጥቁር",
-"አካፋ መቶ አለቃ",
-"ሮለር ትንሹ",
-"ሮለር ትልቁ",
-"መዶሻ ቻይና",
-"መዶሻ አገርኛ",
-"ማጠፊያ TVP",
-"መዶሻ ኮርኒስ",
-"ጎማ ውሃ ልክ",
-"ውሃልክ 40",
-"ውሃልክ 50",
-"ውሃልክ 60",
-"ሶፋ ስቲን",
-"መበየጃ ፒንሳ"
+const products={
+building:[
+["ብሩሽ መቶ አለቃ 1ኛ","Metoo Aleqa Brush No. 1"],["ብሩሽ መቶ አለቃ 2ኛ","Metoo Aleqa Brush No. 2"],
+["ብሩሽ 3/14 ኖርማል","Normal Brush 3/14"],["ብሩሽ 4 ቁጥር","Brush No. 4"],["ብሩሽ 3 ቁጥር","Brush No. 3"],["ብሩሽ 2 ቁጥር","Brush No. 2"],["ብሩሽ 1 ቁጥር","Brush No. 1"],["የስዕል ብሩሽ","Paint Brush"],["ብረት ብሩሽ","Wire Brush"],
+["የግቢ መቶ አለቃ ቁልፍ","Metoo Aleqa Door Lock"],["የግቢ ኦርላንዶ","Orlando Door Lock"],["የግቢ ICSA","ICSA Door Lock"],["እጅታ ኮብራ","Cobra Handle"],["እጅታ ATT","ATT Handle"],["እጅታ ALTRA","ALTRA Handle"],
+["ኪያ ቡሽ ባለ 1","Kia Bush No. 1"],["ኪያ ቡሽ ባለ 2","Kia Bush No. 2"],["ተንጠልጣይ ቁልፍ 70mm","Padlock 70 mm"],["ተንጠልጣይ ቁልፍ 60mm","Padlock 60 mm"],["ተንጠልጣይ ቁልፍ 50mm","Padlock 50 mm"],["ተንጠልጣይ ቁልፍ 40mm","Padlock 40 mm"],["የካዝና ቁልፍ","Safe Lock"],["ሴት ቁልፍ","Set of Keys"],
+["ትሬይ ሳይክል ቁልፍ 266","Tray Cycle Lock 266"],["ትሬይ ሳይክል ቁልፍ 265","Tray Cycle Lock 265"],["ትሬይ ሳይክል ቁልፍ 264","Tray Cycle Lock 264"],["ትሬይ ሳይክል ቁልፍ 263","Tray Cycle Lock 263"],
+["አልሙኒየም እጀታ ጂንታይል","Gentile Aluminium Handle"],["አልሙኒየም እጀታ ዩሂት","Yuhit Aluminium Handle"],["አልሙኒየም ሲሊንደር ጂንታይል","Gentile Aluminium Cylinder"],["አልሙኒየም ሲሊንደር ዩሂት","Yuhit Aluminium Cylinder"],["ሲሊንደር መቶ አለቃ","Metoo Aleqa Cylinder"],["ሲሊንደር ኮብራ","Cobra Cylinder"],["ሲሊንደር ሚላኖ","Milano Cylinder"],["ሲሊንደር ICSA","ICSA Cylinder"],
+["ቪቴ 1.5","Vite 1.5"],["ቪቴ 2.5","Vite 2.5"],["ቪቴ 3","Vite 3"],["ቪቴ 3.5","Vite 3.5"],["ቪቴ 4","Vite 4"],["ቪቴ 5","Vite 5"],["ቪቴ ወርቃማ 6","Golden Vite 6"],["ቪቴ ወርቃማ 8","Golden Vite 8"],["ቪቴ ወርቃማ 10","Golden Vite 10"],["ቪቴ 8×1","Vite 8×1"],["ቪቴ 10×1","Vite 10×1"],
+["ቪቴ ሰልፎ 60","Vite Sulfo 60"],["ቪቴ ሰልፎ 50","Vite Sulfo 50"],["ቪቴ ሰልፎ 40","Vite Sulfo 40"],["ቪቴ ሰልፎ 30","Vite Sulfo 30"],["ቪቴ ሰልፎ 19","Vite Sulfo 19"],["መፍቻዎች","Wrenches"],["ቻክ ቤላ 4 ኢንች","Chak Bela 4 inch"],["ቻክ ቤላ 3 ኢንች","Chak Bela 3 inch"],
+["ፊሸር 6","Fischer 6"],["ፊሸር 8","Fischer 8"],["ፊሸር 10","Fischer 10"],["ስዉር የእንጨት","Concealed Wood Fitting"],["ሮማ የብረት ስውር","Roma Concealed Metal Fitting"],["ጓንት 200g","Gloves 200 g"],["ጓንት 300g","Gloves 300 g"],["ጓንት ከለር","Colored Gloves"],["ጓንት ቆዳ","Leather Gloves"],
+["ፕስቲሽ ክሊር","Clear Plastic"],["ፕስቲሽ ጥቁር","Black Plastic"],["ፕስቲሽ ነጭ","White Plastic"],["ብርጭቆ ወርቀት 120×60×80","Glass Sheet 120×60×80"],["መፋስ ትንሹ","Small Mefas"],["መፋስ ትልቁ","Large Mefas"],["ጭራ 4 ኢንች","Hinge 4 inch"],["ጭራ 6 ኢንች","Hinge 6 inch"],["የኋላ 2 ኢንች","Back Plate 2 inch"],["የኋላ 3 ኢንች","Back Plate 3 inch"],["የኋላ 4 ኢንች","Back Plate 4 inch"],
+["ሰንሰለት 50","Chain 50"],["ሰንሰለት 40","Chain 40"],["ሰንሰለት 45","Chain 45"],["ሰንሰለት 35","Chain 35"],["ሰንሰለት 30","Chain 30"],["ሰንሰለት 25","Chain 25"],["ስቶኮ 4kg","Stuko 4 kg"],["ስቶኮ 6kg","Stuko 6 kg"],["ጀት ቀለም ነጭ","White Jet Paint"],["ጀት ቀለም ነጭ ጋሎን","White Jet Paint Gallon"],["CM 1kg","CM 1 kg"],["CM 1/2","CM 1/2"],["CM 1/4 300g","CM 1/4 300 g"],
+["ሜትር 3","Measuring Tape 3 m"],["ሜትር 5","Measuring Tape 5 m"],["ሜትር 7.5","Measuring Tape 7.5 m"],["ፒንሳ","Pliers"],["ጉጠት","Nail Puller"],["አብሮ ፕላስተር","Abro Plaster"],["ፕላስተር መቶ አለቃ","Metoo Aleqa Plaster"],["አግዳሚ 8 ኢንች","Horizontal Hinge 8 inch"],["አግዳሚ 10 ኢንች","Horizontal Hinge 10 inch"],["ከርኬቶ","Kerketo"],["ዲስክ 180","Cutting Disc 180"],["ዲስክ 230","Cutting Disc 230"],["ዲስክ 5 ኢንች","Cutting Disc 5 inch"],["ዲስክ 350","Cutting Disc 350"],
+["ኮንክሪት ሚስማር 4","Concrete Nails 4"],["ኮንክሪት ሚስማር 6","Concrete Nails 6"],["ኮንክሪት ሚስማር 8","Concrete Nails 8"],["ኮንክሪት ሚስማር 10","Concrete Nails 10"],["ስክ 110","SK 110"],["ስክ 140","SK 140"],["ድብልብል","Diblibil"],["ኩርንችት","Kurnchit"],["ከተር","Cutter"],["ስፕሬ","Spray"],["ቶርኖ ትንሹ","Small Torno"],["ቶርኖ ትልቁ","Large Torno"],["መቀመሚያ","Holder"],["ቀለም 1/2","Paint 1/2"],["ቀለም 1/4","Paint 1/4"],["ማሲንቆ","Masinqo"],["ድግን","Digin"],["ምላጭ መቶ","Metoo Blade"],["ምላጭ አዞ","Crocodile Blade"],["ምላጭ አሳ","Fish Blade"],["ስጌቶ ምላጭ","Sigeto Blade"],["ኤሌክትሮድ 2.5","Electrode 2.5"],["ማንኪያ 20 ኢንች","Trowel 20 inch"],["ማንኪያ 22 ኢንች","Trowel 22 inch"],["ቆብ ሚስማር","Nail Cap"],["ዶማ","Pickaxe"],["ሽቦ 1mm","Wire 1 mm"],["ሽቦ 1.5mm","Wire 1.5 mm"],["ሽቦ 2.5mm","Wire 2.5 mm"],["አካፋ ያማቶ","Yamato Shovel"],["አካፋ ጎልድ","Gold Shovel"],["አካፋ ጥቁር","Black Shovel"],["አካፋ መቶ አለቃ","Metoo Aleqa Shovel"],["ሮለር ትንሹ","Small Roller"],["ሮለር ትልቁ","Large Roller"],["መዶሻ ቻይና","Chinese Hammer"],["መዶሻ አገርኛ","Local Hammer"],["ማጠፊያ TVP","TVP Bender"],["መዶሻ ኮርኒስ","Cornice Hammer"],["ጎማ ውሃ ልክ","Rubber Water Level"],["ውሃልክ 40","Water Level 40"],["ውሃልክ 50","Water Level 50"],["ውሃልክ 60","Water Level 60"],["ሶፋ ስቲን","Sofa Stein"],["መበየጃ ፒንሳ","Welding Pliers"]
 ],
-plumbing: [
-"Union",
-"Teflon",
-"Cross T",
-"PPR Elbow",
-"HDPE Elbow 1/2",
-"HDPE Elbow 3/4",
-"HDPE Elbow 1 inch",
-"HDPE Pipe 1/2",
-"HDPE Pipe 3/4",
-"HDPE Pipe 1 inch",
-"GS Pipe 1/2",
-"Reducer 1 inch to 1/2",
-"PPR Pipe",
-"PPR Tee",
-"PPR Union",
-"PPR Socket",
-"PPR Valve",
-"Water Tap",
-"Ball Valve",
-"Gate Valve",
-"Flexible Hose",
-"Water Meter",
-"Pipe Clamp",
-"Pipe Connector",
-"Drain Pipe",
-"Floor Drain",
-"Shower Set",
-"Sink Mixer",
-"Water Pump Accessories"
+plumbing:[
+["Union","Union"],["Teflon","Teflon Tape"],["Cross T","Cross Tee"],["PPR Elbow","PPR Elbow"],["HDPE Elbow 1/2","HDPE Elbow 1/2 inch"],["HDPE Elbow 3/4","HDPE Elbow 3/4 inch"],["HDPE Elbow 1 inch","HDPE Elbow 1 inch"],["HDPE Pipe 1/2","HDPE Pipe 1/2 inch"],["HDPE Pipe 3/4","HDPE Pipe 3/4 inch"],["HDPE Pipe 1 inch","HDPE Pipe 1 inch"],["GS Pipe 1/2","GS Pipe 1/2 inch"],["Reducer 1 inch to 1/2","Reducer 1 inch to 1/2"],["PPR Pipe","PPR Pipe"],["PPR Tee","PPR Tee"],["PPR Union","PPR Union"],["PPR Socket","PPR Socket"],["PPR Valve","PPR Valve"],["Water Tap","Water Tap"],["Ball Valve","Ball Valve"],["Gate Valve","Gate Valve"],["Flexible Hose","Flexible Hose"],["Water Meter","Water Meter"],["Pipe Clamp","Pipe Clamp"],["Pipe Connector","Pipe Connector"],["Drain Pipe","Drain Pipe"],["Floor Drain","Floor Drain"],["Shower Set","Shower Set"],["Sink Mixer","Sink Mixer"],["Water Pump Accessories","Water Pump Accessories"]
 ],
-electric: [
-"Profile Light",
-"Shadow Light",
-"Socket",
-"Switch",
-"LED Bulb",
-"Magnetic Light",
-"Magnetic Light Accessories",
-"Electrical Wire 1mm",
-"Electrical Wire 1.5mm",
-"Electrical Wire 2.5mm",
-"Electrical Cable",
-"Flood Light",
-"Pendant Light",
-"Ceiling Light",
-"Panel Light",
-"Breaker",
-"Fuse",
-"Distribution Box",
-"Extension Socket",
-"Plug",
-"Electrical Tape",
-"Conduit Pipe",
-"Junction Box",
-"LED Strip",
-"Bulb Holder",
-"Ceiling Rose",
-"Electrical Connector",
-"Insulation Tape"
-]
+electric:[
+["Profile Light","Profile Light"],["Shadow Light","Shadow Light"],["Socket","Socket Outlet"],["Switch","Switch"],["LED Bulb","LED Bulb"],["Magnetic Light","Magnetic Light"],["Magnetic Light Accessories","Magnetic Light Accessories"],["Electrical Wire 1mm","Electrical Wire 1 mm"],["Electrical Wire 1.5mm","Electrical Wire 1.5 mm"],["Electrical Wire 2.5mm","Electrical Wire 2.5 mm"],["Electrical Cable","Electrical Cable"],["Flood Light","Floodlight"],["Pendant Light","Pendant Light"],["Ceiling Light","Ceiling Light"],["Panel Light","Panel Light"],["Breaker","Circuit Breaker"],["Fuse","Fuse"],["Distribution Box","Distribution Box"],["Extension Socket","Extension Socket"],["Plug","Plug"],["Electrical Tape","Electrical Tape"],["Conduit Pipe","Conduit Pipe"],["Junction Box","Junction Box"],["LED Strip","LED Strip"],["Bulb Holder","Bulb Holder"],["Ceiling Rose","Ceiling Rose"],["Electrical Connector","Electrical Connector"],["Insulation Tape","Insulation Tape"]
+]};
+const ui={
+am:{slogan:"በብዛት • በጥራት • በተመጣጣኝ ዋጋ",address:"📍 ሶሳ መርካቶ፣ አዲስ አበባ",adTitle:"📢 አዳዲስ የገቡ እቃዎች",adLine1:"ETHIO REAL — የህንፃ መሳሪያዎች በብዛት",adLine2:"ጋንች • ስክ ባለ 140 / 110 • አግዳሚ ባለ 8 / 10",search:"🔍 የእቃ ስም ይፈልጉ...",cats:["🏗️ የህንፃ እቃዎች","🚰 የቧንቧ እቃዎች","💡 የኤሌክትሪክ እቃዎች"],listTitle:"የሚፈልጉትን እቃ ይምረጡ፤ ብዛቱንም ያስገቡ።",selectAll:"የሚታዩትን ሁሉ ምረጥ",clear:"ምርጫ አጽዳ",send:"📲 ትዕዛዝ በWhatsApp ላክ",count:"የተመረጡ እቃዎች",empty:"የተፈለገው እቃ አልተገኘም።",footerDesc:"የህንፃ መሳሪያዎች በብዛት አቅራቢ",footerAddress:"📍 ሶሳ መርካቶ፣ አዲስ አበባ፣ ኢትዮጵያ",qty:"ብዛት",choose:"እባክዎ ቢያንስ አንድ እቃ ይምረጡ።",hello:"ሰላም ETHIO REAL፣ እነዚህን እቃዎች ማዘዝ እፈልጋለሁ፦",confirm:"እባክዎ መኖሩን ያረጋግጡልኝ። አመሰግናለሁ።",order:"በWhatsApp ይዘዙ"},
+en:{slogan:"WHOLESALE • QUALITY • FAIR PRICE",address:"📍 Sosa Merkato, Addis Ababa",adTitle:"📢 Newly Arrived Items",adLine1:"ETHIO REAL — Building Materials at Wholesale",adLine2:"Hooks • SK 140 / 110 • Horizontal Hinges 8 / 10",search:"🔍 Search for an item...",cats:["🏗️ Building Materials","🚰 Plumbing Supplies","💡 Electrical Supplies"],listTitle:"Select items and enter quantities.",selectAll:"Select all shown",clear:"Clear selection",send:"📲 Send order via WhatsApp",count:"Selected items",empty:"No matching items found.",footerDesc:"Wholesale Building Materials Supplier",footerAddress:"📍 Sosa Merkato, Addis Ababa, Ethiopia",qty:"Quantity",choose:"Please select at least one item.",hello:"Hello ETHIO REAL, I would like to order:",confirm:"Please confirm availability. Thank you.",order:"Order via WhatsApp"}
 };
-
-let currentCategory = "building";
-let english = false;
-const selected = new Map();
-
-const labels = {
-building: "የህንፃ መሳሪያዎች",
-plumbing: "የቧንቧ እቃዎች",
-electric: "የኤሌክትሪክ እቃዎች"
-};
-
-const englishLabels = {
-building: "Building Materials",
-plumbing: "Plumbing Supplies",
-electric: "Electrical Supplies"
-};
-
-function changeCategory(category, button) {
-  currentCategory = category;
-  document.querySelectorAll(".category").forEach(b => b.classList.remove("active"));
-  button.classList.add("active");
-  renderProducts();
+let lang=localStorage.getItem("ethioRealLang")||"am",cat="building";
+const selected=new Map();
+const $=id=>document.getElementById(id);
+function productName(pair){return pair[lang==="en"?1:0]}
+function currentItems(){const q=$("search").value.trim().toLowerCase();return products[cat].filter(p=>productName(p).toLowerCase().includes(q)||p[0].toLowerCase().includes(q))}
+function renderProducts(){
+ const list=$("productList");list.innerHTML="";const matches=currentItems();
+ if(!matches.length){const d=document.createElement("div");d.className="info";d.textContent=ui[lang].empty;list.appendChild(d)}
+ matches.forEach(pair=>{
+  const key=cat+"::"+pair[0],row=document.createElement("div");row.className="product";
+  const cb=document.createElement("input");cb.type="checkbox";cb.checked=selected.has(key);cb.setAttribute("aria-label",productName(pair));
+  const name=document.createElement("span");name.className="product-name";name.textContent=productName(pair);
+  const qty=document.createElement("input");qty.className="quantity";qty.type="number";qty.min="1";qty.step="1";qty.value=selected.get(key)||1;qty.setAttribute("aria-label",ui[lang].qty);
+  cb.addEventListener("change",()=>{if(cb.checked)selected.set(key,Math.max(1,parseInt(qty.value,10)||1));else selected.delete(key);updateCount()});
+  qty.addEventListener("change",()=>{qty.value=Math.max(1,parseInt(qty.value,10)||1);if(cb.checked)selected.set(key,Number(qty.value));updateCount()});
+  row.append(cb,name,qty);list.appendChild(row);
+ });updateCount();
 }
-
-function renderProducts() {
-  const query = document.getElementById("search").value.trim().toLowerCase();
-  const list = document.getElementById("productList");
-  list.innerHTML = "";
-
-  const matches = products[currentCategory].filter(name =>
-    name.toLowerCase().includes(query)
-  );
-
-  if (!matches.length) {
-    list.innerHTML = "<div class='info'>የተፈለገው እቃ አልተገኘም።</div>";
-    updateCount();
-    return;
-  }
-
-  matches.forEach((name, index) => {
-    const key = currentCategory + "::" + name;
-    const item = document.createElement("div");
-    item.className = "product";
-
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.checked = selected.has(key);
-    checkbox.setAttribute("aria-label", name);
-
-    const label = document.createElement("span");
-    label.className = "product-name";
-    label.textContent = name;
-
-    const qty = document.createElement("input");
-    qty.className = "quantity";
-    qty.type = "number";
-    qty.min = "1";
-    qty.step = "1";
-    qty.value = selected.get(key) || 1;
-    qty.setAttribute("aria-label", "ብዛት");
-
-    checkbox.addEventListener("change", () => {
-      if (checkbox.checked) {
-        selected.set(key, Math.max(1, parseInt(qty.value, 10) || 1));
-      } else {
-        selected.delete(key);
-      }
-      updateCount();
-    });
-
-    qty.addEventListener("input", () => {
-      const value = Math.max(1, parseInt(qty.value, 10) || 1);
-      if (checkbox.checked) selected.set(key, value);
-      updateCount();
-    });
-
-    item.append(checkbox, label, qty);
-    list.appendChild(item);
-  });
-
-  updateCount();
+function updateCount(){$("selectedCount").textContent=ui[lang].count+": "+selected.size}
+function setLanguage(next){
+ lang=next;localStorage.setItem("ethioRealLang",lang);const t=ui[lang];
+ $("languageBtn").textContent=lang==="am"?"English":"አማርኛ";
+ ["slogan","address","adTitle","adLine1","adLine2","listTitle","footerDesc","footerAddress"].forEach(id=>$(id).textContent=t[id]);
+ $("search").placeholder=t.search;
+ document.querySelectorAll(".category").forEach((b,i)=>{b.textContent=t.cats[i];b.classList.toggle("active",b.dataset.cat===cat)});
+ $("selectAll").textContent=t.selectAll;$("clear").textContent=t.clear;$("send").textContent=t.send;
+ $("orderAd").textContent="📲 "+t.order;$("callAd").textContent=lang==="am"?"📞 0976 21 36 46":"📞 +251 976 213 646";$("telegramAd").textContent="Telegram";$("telegramBtn").textContent="Telegram";
+ renderProducts();
 }
-
-function selectVisible(shouldSelect) {
-  const query = document.getElementById("search").value.trim().toLowerCase();
-
-  products[currentCategory]
-    .filter(name => name.toLowerCase().includes(query))
-    .forEach(name => {
-      const key = currentCategory + "::" + name;
-      if (shouldSelect) {
-        if (!selected.has(key)) selected.set(key, 1);
-      } else {
-        selected.delete(key);
-      }
-    });
-
-  renderProducts();
-}
-
-function clearSelection() {
-  selected.clear();
-  renderProducts();
-}
-
-function updateCount() {
-  const count = selected.size;
-  document.getElementById("selectedCount").textContent =
-    (english ? "Selected items: " : "የተመረጡ እቃዎች: ") + count;
-}
-
-function sendOrder() {
-  if (selected.size === 0) {
-    alert(english ? "Please select at least one item." : "እባክዎ ቢያንስ አንድ እቃ ይምረጡ።");
-    return;
-  }
-
-  let message = english
-    ? "Hello ETHIO REAL, I would like to order:\n\n"
-    : "ሰላም ETHIO REAL፣ እነዚህን እቃዎች ማዘዝ እፈልጋለሁ፦\n\n";
-
-  let number = 1;
-  selected.forEach((qty, key) => {
-    const parts = key.split("::");
-    const category = labels[parts[0]];
-    const name = parts[1];
-    message += number + ". " + name + "\n";
-    message += (english ? "Quantity: " : "ብዛት: ") + qty + "\n";
-    number++;
-  });
-
-  message += "\n" + (english
-    ? "Please confirm availability. Thank you."
-    : "እባክዎ መኖሩን ያረጋግጡልኝ። አመሰግናለሁ።");
-
-  const url = "https://wa.me/251976213646?text=" + encodeURIComponent(message);
-  window.open(url, "_blank");
-}
-
-function toggleLanguage() {
-  english = !english;
-  document.getElementById("languageBtn").textContent = english ? "አማርኛ" : "English";
-  document.getElementById("slogan").textContent = english
-    ? "WHOLESALE • QUALITY • FAIR PRICE"
-    : "በብዛት • በጥራት • በተመጣጣኝ ዋጋ";
-  document.getElementById("adTitle").textContent = english
-    ? "📢 Newly Arrived Items"
-    : "📢 አዳዲስ የገቡ እቃዎች";
-  document.getElementById("search").placeholder = english
-    ? "🔍 Search for an item..."
-    : "🔍 የእቃ ስም ይፈልጉ...";
-  document.getElementById("listTitle").textContent = english
-    ? "Select items and enter quantities."
-    : "የሚፈልጉትን እቃ ይምረጡ፤ ብዛቱንም ያስገቡ።";
-
-  const buttons = document.querySelectorAll(".category");
-  buttons.forEach(button => {
-    const cat = button.dataset.cat;
-    const icon = cat === "building" ? "🏗️" : cat === "plumbing" ? "🚰" : "💡";
-    button.textContent = icon + " " + (english ? englishLabels[cat] : labels[cat]);
-  });
-
-  document.querySelector(".selectall").textContent = english
-    ? "Select all shown" : "የሚታዩትን ሁሉ ምረጥ";
-  document.querySelector(".clear").textContent = english
-    ? "Clear selection" : "ምርጫ አጽዳ";
-  document.querySelector(".send").textContent = english
-    ? "📲 Send order via WhatsApp" : "📲 ትዕዛዝ በWhatsApp ላክ";
-
-  updateCount();
-}
-
-renderProducts();
+function changeCategory(next){cat=next;document.querySelectorAll(".category").forEach(b=>b.classList.toggle("active",b.dataset.cat===cat));renderProducts()}
+document.querySelectorAll(".category").forEach(b=>b.addEventListener("click",()=>changeCategory(b.dataset.cat)));
+$("search").addEventListener("input",renderProducts);
+$("languageBtn").addEventListener("click",()=>setLanguage(lang==="am"?"en":"am"));
+$("telegramBtn").addEventListener("click",()=>location.href="https://t.me/ethio_real1/41");
+$("selectAll").addEventListener("click",()=>{currentItems().forEach(p=>{const k=cat+"::"+p[0];if(!selected.has(k))selected.set(k,1)});renderProducts()});
+$("clear").addEventListener("click",()=>{selected.clear();renderProducts()});
+$("send").addEventListener("click",()=>{
+ if(!selected.size){alert(ui[lang].choose);return}
+ let msg=ui[lang].hello+"\n\n",i=1;
+ selected.forEach((qty,key)=>{const [c,amName]=key.split("::");const pair=products[c].find(p=>p[0]===amName);msg+=i+". "+(pair?productName(pair):amName)+"\n"+ui[lang].qty+": "+qty+"\n";i++});
+ msg+="\n"+ui[lang].confirm;location.href="https://wa.me/251976213646?text="+encodeURIComponent(msg);
+});
+const adImages=["ad-nails-1.jpg","ad-nails-2.jpg","ad-nails-3.png"];let adIndex=0;
+setInterval(()=>{adIndex=(adIndex+1)%adImages.length;$("adImage").src=adImages[adIndex];document.querySelectorAll(".dot").forEach((d,i)=>d.classList.toggle("active",i===adIndex))},4000);
+setLanguage(lang);
 </script>
 </body>
 </html>
